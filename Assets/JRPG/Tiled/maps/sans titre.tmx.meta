@@ -12,45 +12,12 @@ ScriptedImporter:
   errors:
   - Errors detected in tileset 'tilesBase.tsx'. Check the tileset inspector for more
     details. Your map may be broken until these are fixed.
-  - Errors detected in tileset 'toitBase.tsx'. Check the tileset inspector for more
-    details. Your map may be broken until these are fixed.
-  - Errors detected in tileset 'Animated.tsx'. Check the tileset inspector for more
-    details. Your map may be broken until these are fixed.
-  - Could not find tile 3103. Make sure the tilesets were successfully imported.
-  - Could not find tile 2766. Make sure the tilesets were successfully imported.
-  - Could not find tile 2406. Make sure the tilesets were successfully imported.
-  - Could not find tile 2190. Make sure the tilesets were successfully imported.
-  - Could not find tile 2262. Make sure the tilesets were successfully imported.
-  - Could not find tile 2550. Make sure the tilesets were successfully imported.
-  - Could not find tile 2478. Make sure the tilesets were successfully imported.
-  - Could not find tile 2694. Make sure the tilesets were successfully imported.
-  - Could not find tile 2622. Make sure the tilesets were successfully imported.
-  - Could not find tile 2958. Make sure the tilesets were successfully imported.
-  - Could not find tile 2959. Make sure the tilesets were successfully imported.
-  - Could not find tile 2960. Make sure the tilesets were successfully imported.
-  - Could not find tile 3030. Make sure the tilesets were successfully imported.
-  - Could not find tile 3032. Make sure the tilesets were successfully imported.
-  - Could not find tile 3102. Make sure the tilesets were successfully imported.
-  - Could not find tile 3103. Make sure the tilesets were successfully imported.
-  - Could not find tile 2118. Make sure the tilesets were successfully imported.
-  - Could not find tile 3175. Make sure the tilesets were successfully imported.
-  - Could not find tile 2265. Make sure the tilesets were successfully imported.
-  - Could not find tile 3104. Make sure the tilesets were successfully imported.
-  - Could not find tile 789. Make sure the tilesets were successfully imported.
-  - Could not find tile 790. Make sure the tilesets were successfully imported.
-  - Could not find tile 791. Make sure the tilesets were successfully imported.
-  - Could not find tile 825. Make sure the tilesets were successfully imported.
-  - Could not find tile 826. Make sure the tilesets were successfully imported.
-  - Could not find tile 827. Make sure the tilesets were successfully imported.
-  - Could not find tile 861. Make sure the tilesets were successfully imported.
-  - Could not find tile 862. Make sure the tilesets were successfully imported.
-  - Could not find tile 863. Make sure the tilesets were successfully imported.
   warnings: []
   missingSortingLayers: []
   missingLayers: []
   missingTags: []
   importerVersion: 26
-  pixelsPerUnit: 100
+  pixelsPerUnit: 32
   edgesPerEllipse: 32
   numberOfObjectsImported: 2
   tilesAsObjects: 0

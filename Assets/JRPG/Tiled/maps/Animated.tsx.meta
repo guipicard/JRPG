@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e1da9d09234986843b6db0cdc6d391cf
+guid: adcc9253494097a49a30b0526bc5cec9
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,8 +11,8 @@ ScriptedImporter:
   missingFiles: []
   errors:
   - Texture was imported at a smaller size. Make sure 'Max Size' on '../../../World
-    of Solaria Rural Village Update 05a/32x32/Tilesets/Rural Village Roofs32.png'
-    is at least '1184'
+    of Solaria Rural Village Update 05a/32x32/Animated Tiles/Village Animated Water32.png'
+    is at least '2304'
   warnings: []
   missingSortingLayers: []
   missingLayers: []

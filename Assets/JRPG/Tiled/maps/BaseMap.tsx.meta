@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e1da9d09234986843b6db0cdc6d391cf
+guid: cc755ac12ce96264c9b2f4f568e221d5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -9,10 +9,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
   missingFiles: []
-  errors:
-  - Texture was imported at a smaller size. Make sure 'Max Size' on '../../../World
-    of Solaria Rural Village Update 05a/32x32/Tilesets/Rural Village Roofs32.png'
-    is at least '1184'
+  errors: []
   warnings: []
   missingSortingLayers: []
   missingLayers: []
@@ -20,7 +17,7 @@ ScriptedImporter:
   importerVersion: 13
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 2
+  numberOfObjectsImported: 1453
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048

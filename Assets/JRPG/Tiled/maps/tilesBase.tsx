@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.10.2" name="tilesBase" tilewidth="32" tileheight="32" tilecount="725" columns="29">
- <image source="../JRPG/Assets/World of Solaria Rural Village Update 05a/32x32/Tilesets/Rural Village Old Tiles32 (No Longer Supported).png" width="928" height="800"/>
+ <image source="../../../World of Solaria Rural Village Update 05a/32x32/Tilesets/Rural Village Old Tiles32 (No Longer Supported).png" width="928" height="800"/>
  <tile id="112">
   <objectgroup draworder="index" id="2">
    <object id="1" x="16.0909" y="10.0909" width="15.8182" height="21.8182"/>

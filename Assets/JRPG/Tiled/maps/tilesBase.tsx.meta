@@ -8,12 +8,12 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
-  missingFiles:
-  - ../JRPG/Assets/World of Solaria Rural Village Update 05a/32x32/Tilesets/Rural
-    Village Old Tiles32 (No Longer Supported).png
+  missingFiles: []
   errors:
-  - 'Missing texture asset: ../JRPG/Assets/World of Solaria Rural Village Update
-    05a/32x32/Tilesets/Rural Village Old Tiles32 (No Longer Supported).png'
+  - Invalid ellipse (Tile ID ='122') in tileset 'tilesBase' has zero width
+  - Invalid ellipse (Tile ID ='123') in tileset 'tilesBase' has zero width
+  - Invalid ellipse (Tile ID ='180') in tileset 'tilesBase' has zero width
+  - Invalid ellipse (Tile ID ='181') in tileset 'tilesBase' has zero width
   warnings: []
   missingSortingLayers: []
   missingLayers: []
@@ -21,7 +21,7 @@ ScriptedImporter:
   importerVersion: 13
   pixelsPerUnit: 100
   edgesPerEllipse: 32
-  numberOfObjectsImported: 2
+  numberOfObjectsImported: 1453
   useSpriteAtlas: 1
   atlasWidth: 2048
   atlasHeight: 2048

@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: e1da9d09234986843b6db0cdc6d391cf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles:
+  - ../JRPG/Assets/World of Solaria Rural Village Update 05a/32x32/Tilesets/Rural
+    Village Roofs32.png
+  errors:
+  - 'Missing texture asset: ../JRPG/Assets/World of Solaria Rural Village Update
+    05a/32x32/Tilesets/Rural Village Roofs32.png'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 13
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048

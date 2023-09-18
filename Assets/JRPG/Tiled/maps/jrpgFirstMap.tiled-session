@@ -1,0 +1,21 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Tous les Fichiers (*)",
+    "fileStates": {
+    },
+    "frame.defaultDuration": 600,
+    "last.imagePath": "C:/Users/guill/Desktop/School/Session4/JRPG/JRPG/Assets/World of Solaria Rural Village Update 05a/32x32/Tilesets",
+    "map.lastUsedFormat": "tmx",
+    "openFiles": [
+    ],
+    "project": "jrpgFirstMap.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

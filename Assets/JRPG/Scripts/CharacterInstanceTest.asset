@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45aebf9791c6d1a4280c9bda4fe4ddb6, type: 3}
   m_Name: CharacterInstanceTest
   m_EditorClassIdentifier: 
-  skillUnlock: []
+  skillUnlock:
+  - level: 0
+    skill: {fileID: 11400000, guid: 10fbddcf2ff4a5c4d80b821955b27d77, type: 2}
   stats:
     maxHP:
       serializedVersion: 2

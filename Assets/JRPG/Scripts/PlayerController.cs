@@ -5,9 +5,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private SaveData saveData;
+    private SaveData saveData;
 
-   
+    private void Awake()
+    {
+        saveData = GameManager.Instance.SaveData;
+        GameManager.Instance.onSave += Save;
+        GameManager.Instance.onLoad += Load;
+        GameManager.Instance.Load(saveData, GameManager.Instance.GetIndex());
+    }
 
     public void Save()
     {
@@ -16,11 +22,6 @@ public class PlayerController : MonoBehaviour
     public void Load()
     {
         transform.position = saveData.playerInWorldPosition;
-    }
-    void Start()
-    {
-        GameManager.Instance.onSave += Save;
-        GameManager.Instance.onLoad += Load;
     }
 
     // Update is called once per frame

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] SaveData currentSaveData;
+    public SaveData SaveData;
     public Action onSave;
     public Action onLoad;
     public int saveIndex = 0;
@@ -35,9 +35,12 @@ public class GameManager : Singleton<GameManager>
         //    Load();
         //}
     }
-    public void NewGame(int _index)
+    public SaveData NewGame(int _index)
     {
-        currentSaveData = SaveManager.NewSave(_index);
+        SaveManager.NewSave(SaveData, _index);
+        SetIndex(_index);
+        Save(SaveData, _index);
+        return SaveData;
     }
 
     public int GetIndex()
@@ -50,10 +53,20 @@ public class GameManager : Singleton<GameManager>
         saveIndex = _index;
     }
 
-    public void Save(int _index)
+    public void QuickSave()
+    {
+        Save(SaveData, saveIndex);
+    }
+
+    public void QuickLoad()
+    {
+        Load(SaveData, saveIndex);
+    }
+
+    public void Save(SaveData data, int _index)
     {
         onSave?.Invoke();
-        bool success = SaveManager.Save(currentSaveData, _index);
+        bool success = SaveManager.Save(data, _index);
         if (success)
         {
             Debug.Log("Save Succeed ! !");
@@ -64,17 +77,17 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void Load(int _index)
+    public void Load(SaveData data, int _index)
     {
-        onLoad?.Invoke();
-        bool success = SaveManager.Load(_index);
+        bool success = SaveManager.Load(data, _index);
         if (success)
         {
-            Debug.Log("Save Succeed ! !");
+            Debug.Log("Load Succeed ! !");
+            onLoad?.Invoke();
         }
         else
         {
-            Debug.Log("Save Failed.");
+            Debug.Log("Load Failed.");
         }
     }
 

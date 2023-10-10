@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuFunction : MonoBehaviour
 {
-    private bool m_Pause = false;
+    private bool m_Pause = true;
     [SerializeField] private GameObject m_MenuScreen;
     // Start is called before the first frame update
     void Start()
     {
-            m_MenuScreen.SetActive(false);
+        Pause();
     }
 
     // Update is called once per frame
@@ -38,32 +39,19 @@ public class MenuFunction : MonoBehaviour
 
     public void LoadGame()
     {
-        GameManager.Instance.Load(GameManager.Instance.GetIndex());
+        GameManager.Instance.QuickLoad();
         Pause();
-    }
-
-    public void Load1()
-    {
-        GameManager.Instance.Load(1);
-    }
-
-    public void Load2()
-    {
-        GameManager.Instance.Load(2);
-    }
-
-    public void Load3()
-    {
-        GameManager.Instance.Load(3);
     }
 
     public void SaveGame()
     {
-        GameManager.Instance.Save(GameManager.Instance.GetIndex());
+        GameManager.Instance.QuickSave();
     }
 
-    public void ExitGame()
+    public void MainMenuexit()
     {
-        Application.Quit();
+        GameManager.Instance.onLoad = null;
+        GameManager.Instance.onSave = null;
+        SceneManager.LoadScene("MainMenu");
     }
 }

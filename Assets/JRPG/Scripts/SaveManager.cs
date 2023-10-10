@@ -8,7 +8,8 @@ public static class SaveManager
     public static string SaveFolder => $"{Application.persistentDataPath }/Saves/";
     public static string Extension => ".save";
 
-    public static List<SaveData> savesList = new List<SaveData>();
+    public static List<SaveData> savesList = new List<SaveData>{ null, null, null };
+
     public static bool Save(SaveData _data, int _index)
     {
         string saveName = $"Save{_index}{Extension}";
@@ -33,9 +34,9 @@ public static class SaveManager
         return true;
     }
 
-    public static bool Load(int _index)
+    public static bool Load(SaveData data, int _index)
     {
-        string saveName = $"Save_{_index}{Extension}";
+        string saveName = $"Save{_index}{Extension}";
         string jsonData = "";
 
         if (!System.IO.File.Exists(SaveFolder + saveName))
@@ -52,25 +53,23 @@ public static class SaveManager
             Debug.Log($"[SAVEMANAGER] {e}");
             return false;
         }
-        SaveData data = savesList[_index];
+        data = savesList[_index];
         JsonUtility.FromJsonOverwrite(jsonData, data);
         return true;
     }
 
-    public static SaveData NewSave(int _index)
+    public static SaveData NewSave(SaveData data, int _index)
     {
         if (savesList[_index] != null)
         {
             Debug.Log("purged");
         }
-        SaveData data = new SaveData();
-        data.playerInWorldPosition = Vector2.zero;
+        data.playerInWorldPosition = new Vector2(25.0f, -8.0f);
         data.saveName = $"New Game {_index}";
         data.mapName = "New Map";
         data.party = new List<CharacterInstance>();
 
         savesList[_index] = data;
-        GameManager.Instance.SetIndex(_index);
         return data;   
     }
 }

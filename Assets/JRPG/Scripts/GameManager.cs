@@ -3,17 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-    public static GameManager Instance;
     [SerializeField] SaveData currentSaveData;
     public Action onSave;
     public Action onLoad;
     public int saveIndex = 0;
     // Start is called before the first frame update
-    private void Awake()
+    protected override void Awake()
     {
-        Instance = this;
+        base.Awake();
     }
     void Start()
     {

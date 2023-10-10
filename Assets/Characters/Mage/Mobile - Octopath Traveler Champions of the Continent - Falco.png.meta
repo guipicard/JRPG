@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,27 +34,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 44
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -147,18 +147,3318 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deef65d4bd099df4b90369c08e397b21
+      internalID: 425202069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c40770d2b873e4081aedccf5bcceb3
+      internalID: 1798165990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fe8b9f732327b4eac13842da467b29
+      internalID: -361845243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d540e5090a467f44982f19d14a3f9301
+      internalID: 450387192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d0ad5db9a1077419610a5e597f8942
+      internalID: -1680013243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5a61cfeb9ffac4088b4621c2d5cf59
+      internalID: -1228007266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df910c57532e2bb41becf40d7fb80705
+      internalID: 1170913822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_7
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bd637ba8a4e314c8aa66ccb7b3ffdc
+      internalID: -967375353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb804d83894f2d4cb8be46320955f94
+      internalID: -379865929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 616
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da274fbaf5a8d1b4789038977e0f08b7
+      internalID: 1294366882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e27661d4f4a8246833635ca2e557ff
+      internalID: -771527160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_11
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514067bc8e3c5ea47adc69efc1ba5be4
+      internalID: -826664698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ad6aabcc9eef64bab9292ad5d14e1f
+      internalID: -327520716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a019e2e1850bb2745ab985d6f6292c24
+      internalID: 82783908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570e4e97a790aac44ab74c3568ae8f14
+      internalID: 1901575593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95783ef05e617f64c82e3a136fd78eb1
+      internalID: 113344522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17432c41a1b607a49b0a3d2d00166505
+      internalID: 1454322138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c120ca40e45b3af42a6a17e6f6a86113
+      internalID: -1944095401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_18
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf1b51af5c532a488756c997931d550
+      internalID: 1119909230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_19
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 572
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e2b4eee64c993479f32b1a73034f5a
+      internalID: -651268747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71322ddbad0838f41bd740ba9309d329
+      internalID: -1194244827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158da8921b6d6aa4e845670913725252
+      internalID: -1931526085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ede3cb5e39dfaf4eb7a53d352aff7d4
+      internalID: -1821331784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12b050fd2111741acd04b1f6dba931
+      internalID: 254909390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_24
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef65e350c81cb7946b06d023b080c07e
+      internalID: -492070193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_25
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb5fcc64ba33234b972aba7247894df
+      internalID: 1205072098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_26
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b842fad932d6d4a912c82164f24383
+      internalID: -912255840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_27
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b787c9c65effd4bb5a07cfe925b003
+      internalID: -1916051532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_28
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a01db949b75a8479a4db4450c97a62
+      internalID: 1111022725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_29
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 528
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123049eda1d45d143b3bc2ce65447c79
+      internalID: -1118514226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ebf050631288f4e820ae7c6654ce99
+      internalID: 243119449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_31
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2eaf112a4e8f8459a2b2772b2f4b0d
+      internalID: 1677760145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_32
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997cbafa28d771d4ea19bb5487778391
+      internalID: -771620535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b50605ffbcfaa4580e638f7c9e15fd
+      internalID: -262323486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_34
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b5f5c9bce817d4c8f3d554048cc700
+      internalID: -513379273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_35
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440c3ce5dfd69b347bdf0719576c796e
+      internalID: 1805917103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_36
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a40937c6caf7f489ccc6bbdda6249d
+      internalID: 577779944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_37
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a0fe6a37b571643b9fcf0ba27a7879
+      internalID: -1432838028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19b839302b4918428160f5df66241b6
+      internalID: -383277911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_39
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 484
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdc8dc9d998d3b448b1b078adc59c03
+      internalID: -877256009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be67a2e41a3792545a7f042bdf96caf0
+      internalID: 1442936778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_41
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98824798b4cb5ab4eb4f51de45758ffb
+      internalID: -306095892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_42
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb539582878dee408048867e327d136
+      internalID: 687564947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42608bd0e8bbb3b41a6fa1c33563d467
+      internalID: 645618756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_44
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9f1b310c2d5a74c9355c8c3fb87bda
+      internalID: -520429917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_45
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e4fd3de9b70d948ab7266c0629a530
+      internalID: 373131151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_46
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4804d96575b3044a8fe620b21540114
+      internalID: -2126764453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_47
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4368495441873a4b90848217d9e7ca0
+      internalID: -1932166390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc18963c6148c74bb9b541138765ce1
+      internalID: 973361946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_49
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 440
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1720c1dc9fca79e4baa160a657e0ac15
+      internalID: -1533355226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1479f13de8de448abf2952d240ed12
+      internalID: -181627762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_51
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2774ec78d49f0c74b8b3c78ae460a293
+      internalID: -1367989026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_52
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717164ad93f1a094da820c4f8c2e0e9e
+      internalID: 2006285651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_53
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6818813fd5f01bc44805776b53023a34
+      internalID: 1105089634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_54
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a7f344d635bed499335df145d1e4cf
+      internalID: 1745853246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_55
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544017b2eb73e4a4a9249d4c401483fb
+      internalID: -2034560751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b55ae5aed1b5814fa4347305a9f8175
+      internalID: 884297913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_57
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ea3b98eaca9f741a5173d4526ed6b9
+      internalID: 1209754161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_58
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443c937542f070f488c842bf979db7cc
+      internalID: -157643839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_59
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 396
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923f376564a8ad240b9c2ddf042f1fc5
+      internalID: -1433505509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b71b95490440f48bf8cc49d7ec7172
+      internalID: 1799574278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_61
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9ecdc54c9d9714ab971c81aa34558a
+      internalID: -750404059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_62
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fe4166e4e11b04e85c48bc7aeb1e31
+      internalID: -283589274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_63
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89af87097257fd040b8f4b061e9f02f2
+      internalID: 1384856998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_64
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70e1b46193477049bc9a1765c0e6761
+      internalID: -1859491421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_65
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911fdc2fc8f56384f9064a0261e0a99b
+      internalID: -43151692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_66
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef7cffa3bdf6544095b63e10271576f
+      internalID: -1792347197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_67
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97fa178855ae4b42948749e6020f6e3
+      internalID: 1067372600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_68
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2f440b90b52b84fb29f430a705a56a
+      internalID: -2100311668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_69
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 352
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a82c5c869ab6d43945c2c898d55f81
+      internalID: 729977946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51a4769925478944a224c16d752fb26
+      internalID: -1023692317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_71
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23c57491ea347d44b9d5823de61fecc
+      internalID: 1209156638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_72
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a4ad35bbc63214a80c8fc8e029713f
+      internalID: -326387444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_73
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31017b9febddae43b83ca6b004c6873
+      internalID: -438076380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_74
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c8ae7b5b4e71488a6eaff6543e39f
+      internalID: 826220761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_75
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674492d4f39385f44907c1cceefbf90f
+      internalID: -1550301845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_76
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ba0a2b879397b4c8c4831d35c74304
+      internalID: 777907072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_77
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912d3d7d669a7014a9960a2b4315f9e6
+      internalID: 1028319501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_78
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af165956c083926448a75e79d3b48f5c
+      internalID: 1141216135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_79
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 308
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35529d2d57df65142a3756d14621ee59
+      internalID: 883178364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaa4b21d91479f499a6f5b140f8fbed
+      internalID: -1771259961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_81
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0463f923c2425489b4eebe5b27b26c
+      internalID: 1621841671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_82
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da9b36c87d9f6a43b4ff6056eb66373
+      internalID: 1736879449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_83
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee54e78ed717d247bd46265996cf205
+      internalID: -1559062053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_84
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a39bbed5746f244c83bef015f1bc32f
+      internalID: 55359625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_85
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7867c9c1b6c824797bd287095298bd
+      internalID: 617746116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_86
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658be331ef98f934f910d3e83cb0be7d
+      internalID: 52611824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_87
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e71aec09580714f8df2d8ab88a8e16
+      internalID: -835023346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_88
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7985c412a89e84988f427b9ee1e9cd
+      internalID: 548785400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_89
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 264
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae235e4829b05d4ab88956394447a4a
+      internalID: 1971004128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e7c1b85280d064bbaf78508650c83a
+      internalID: -1286314451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_91
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b249dbc6eae3cdc4bae4e1b278df6dc7
+      internalID: -1040754583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_92
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdae46bfa946f834b90a9947416ae380
+      internalID: 1914800066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_93
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3410d87b7dcf147acb79478ad976e7
+      internalID: 1156264195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_94
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c728b169d3e5e44088a9ecabbad14aa
+      internalID: -147646784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_95
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a250d1b6a8b014ba5106b33ef39d5e
+      internalID: -2041922526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_96
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e3d20e2b8a02e44836776aebbef0c3
+      internalID: -98311353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_97
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2f932cb47e85742bf8df985dbaf45b
+      internalID: 1414407982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_98
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8400d409cfd974c4e914e065d85dcb60
+      internalID: 989736607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_99
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 220
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf6d7693e851ce45a93e7d1a62bb3e7
+      internalID: -742538048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44af320bca9d5844ea20549f3a877c2b
+      internalID: -1670782979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_101
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c4129b81bdfd74388efe64e64e9f55
+      internalID: -1902857637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_102
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780ee9ae8af3d4b40b1f8ff9bb3f9a19
+      internalID: -1243774720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_103
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f21e86f0a6f9a4ab9e1c976e0fc7f8
+      internalID: 937257106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_104
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e372e92ec80824093f78af084fd528
+      internalID: 1904520206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_105
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6181a5ce3235549be5f7c2af557c92
+      internalID: 420919789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_106
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a552e6a1f71915b4d9921a655167c43f
+      internalID: -862782959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_107
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd3d3986b9e95b4ab7f934e1bed9276
+      internalID: 1913977149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_108
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec47d97d9e1c7374683cd530508ab4d3
+      internalID: 2129731476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_109
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 176
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5189108946f64f4e978331bfe21d450
+      internalID: 1945449657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8480dd1fe80a04c9afeb10791b2e6b
+      internalID: -1707472294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_111
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c63a5c8c320fe4eb3d3c548821f8cf
+      internalID: -663324778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_112
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c587441923a11af4883cd9585b816788
+      internalID: -1393611133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_113
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897a277dcdb62db478f125960eac4c43
+      internalID: -622933993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ef40e6944244c47a7e4de87136e6ac
+      internalID: -1591676845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_115
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfe3fe043bd8524fa0d7442f79ace3a
+      internalID: 695042071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_116
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a4b2af19736c409205ea560271feb
+      internalID: 1124347414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_117
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d3181af4954dd498124bc41f0ef97c
+      internalID: 404741471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_118
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c4d750336104e47ae4d1b63b598915
+      internalID: -1405149687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_119
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 132
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205e00065237fde458a67f29943f79a3
+      internalID: -933711113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f24c4c74a7d3545bf6a2ed9d8287b2
+      internalID: 743926488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_121
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd200c881a439eb408c4c63536b8fc75
+      internalID: -1489232627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_122
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32feca4f22e1f3458be4300fe885e0e
+      internalID: -382551042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_123
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6220af16631d11344ad5bf19f50fccac
+      internalID: -504182541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_124
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d555afca8afadf4097f1c7e53405dbe
+      internalID: 1766096295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_125
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477a293d74f2e6e41b3689650108c432
+      internalID: 1478596846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_126
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030251178c9bd2844abfc29deedc3194
+      internalID: -1935563742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_127
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999ad5052b712ac4e863ef82646a786e
+      internalID: 2108824071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_128
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53f7069598a2f64b83c3e9ba1d9097f
+      internalID: 1801868881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_129
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 88
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73192ba7baa1c349835d1bd0ef927d8
+      internalID: 1198661476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a354010f1f384c4f80e996c9ab750f7
+      internalID: -1828760708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_131
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea92639dd4cbfc448df7a467e1a83c6
+      internalID: 1978099954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_132
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b7bab1381e12c4692ee0db46bd9af4
+      internalID: 771255344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_133
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0d00803cfde1a4dbbe207c71c63606
+      internalID: 1385038807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_134
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0daa074b58c285c4594b6ae867e723c3
+      internalID: 2076486722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_135
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197e5966527884a42933d1f52723d82f
+      internalID: -1183559440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_136
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7543e59d540521143913a4b31927362d
+      internalID: 1495552912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_137
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b77bfb4be4d184cb6ab8565cd2b2f5
+      internalID: -595719144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_138
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5674e23c14e6d47a42f6e8c88f0b0e
+      internalID: 1653303660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_139
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 44
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0a5e12f31de5844b92926e72fb05c8
+      internalID: -242001359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f745282464e3f4cb4fa4f038290457
+      internalID: -1286667646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_141
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fccc4ff3da1f7448ad252cf924123e9
+      internalID: 1140074144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_142
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948f2b5ac9a3552458364e9f65d7b195
+      internalID: -1416284154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_143
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147adb929e68ebb4ca26631e3b5b696b
+      internalID: -1150044757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_144
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5606bd18d4d6d0b40bf9ef2a0db3e203
+      internalID: -1950057204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_145
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b585cc1f1161942a6c1a7e12a33f0e
+      internalID: 394399103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_146
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5be31c03372e44aac4484af120c44f
+      internalID: -177003161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_147
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71559f53f89884640ac33115e149382e
+      internalID: 1522695162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_148
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e1d5c5cb8f164eb3c9c9b5d43b3c5
+      internalID: -962615782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Octopath Traveler Champions of the Continent - Falco_149
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b50e1afa9e579f45bb3a6b9369b2655
+      internalID: -1313919183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mobile - Octopath Traveler Champions of the Continent - Falco_0: 425202069
+      Mobile - Octopath Traveler Champions of the Continent - Falco_1: 1798165990
+      Mobile - Octopath Traveler Champions of the Continent - Falco_10: -771527160
+      Mobile - Octopath Traveler Champions of the Continent - Falco_100: -1670782979
+      Mobile - Octopath Traveler Champions of the Continent - Falco_101: -1902857637
+      Mobile - Octopath Traveler Champions of the Continent - Falco_102: -1243774720
+      Mobile - Octopath Traveler Champions of the Continent - Falco_103: 937257106
+      Mobile - Octopath Traveler Champions of the Continent - Falco_104: 1904520206
+      Mobile - Octopath Traveler Champions of the Continent - Falco_105: 420919789
+      Mobile - Octopath Traveler Champions of the Continent - Falco_106: -862782959
+      Mobile - Octopath Traveler Champions of the Continent - Falco_107: 1913977149
+      Mobile - Octopath Traveler Champions of the Continent - Falco_108: 2129731476
+      Mobile - Octopath Traveler Champions of the Continent - Falco_109: 1945449657
+      Mobile - Octopath Traveler Champions of the Continent - Falco_11: -826664698
+      Mobile - Octopath Traveler Champions of the Continent - Falco_110: -1707472294
+      Mobile - Octopath Traveler Champions of the Continent - Falco_111: -663324778
+      Mobile - Octopath Traveler Champions of the Continent - Falco_112: -1393611133
+      Mobile - Octopath Traveler Champions of the Continent - Falco_113: -622933993
+      Mobile - Octopath Traveler Champions of the Continent - Falco_114: -1591676845
+      Mobile - Octopath Traveler Champions of the Continent - Falco_115: 695042071
+      Mobile - Octopath Traveler Champions of the Continent - Falco_116: 1124347414
+      Mobile - Octopath Traveler Champions of the Continent - Falco_117: 404741471
+      Mobile - Octopath Traveler Champions of the Continent - Falco_118: -1405149687
+      Mobile - Octopath Traveler Champions of the Continent - Falco_119: -933711113
+      Mobile - Octopath Traveler Champions of the Continent - Falco_12: -327520716
+      Mobile - Octopath Traveler Champions of the Continent - Falco_120: 743926488
+      Mobile - Octopath Traveler Champions of the Continent - Falco_121: -1489232627
+      Mobile - Octopath Traveler Champions of the Continent - Falco_122: -382551042
+      Mobile - Octopath Traveler Champions of the Continent - Falco_123: -504182541
+      Mobile - Octopath Traveler Champions of the Continent - Falco_124: 1766096295
+      Mobile - Octopath Traveler Champions of the Continent - Falco_125: 1478596846
+      Mobile - Octopath Traveler Champions of the Continent - Falco_126: -1935563742
+      Mobile - Octopath Traveler Champions of the Continent - Falco_127: 2108824071
+      Mobile - Octopath Traveler Champions of the Continent - Falco_128: 1801868881
+      Mobile - Octopath Traveler Champions of the Continent - Falco_129: 1198661476
+      Mobile - Octopath Traveler Champions of the Continent - Falco_13: 82783908
+      Mobile - Octopath Traveler Champions of the Continent - Falco_130: -1828760708
+      Mobile - Octopath Traveler Champions of the Continent - Falco_131: 1978099954
+      Mobile - Octopath Traveler Champions of the Continent - Falco_132: 771255344
+      Mobile - Octopath Traveler Champions of the Continent - Falco_133: 1385038807
+      Mobile - Octopath Traveler Champions of the Continent - Falco_134: 2076486722
+      Mobile - Octopath Traveler Champions of the Continent - Falco_135: -1183559440
+      Mobile - Octopath Traveler Champions of the Continent - Falco_136: 1495552912
+      Mobile - Octopath Traveler Champions of the Continent - Falco_137: -595719144
+      Mobile - Octopath Traveler Champions of the Continent - Falco_138: 1653303660
+      Mobile - Octopath Traveler Champions of the Continent - Falco_139: -242001359
+      Mobile - Octopath Traveler Champions of the Continent - Falco_14: 1901575593
+      Mobile - Octopath Traveler Champions of the Continent - Falco_140: -1286667646
+      Mobile - Octopath Traveler Champions of the Continent - Falco_141: 1140074144
+      Mobile - Octopath Traveler Champions of the Continent - Falco_142: -1416284154
+      Mobile - Octopath Traveler Champions of the Continent - Falco_143: -1150044757
+      Mobile - Octopath Traveler Champions of the Continent - Falco_144: -1950057204
+      Mobile - Octopath Traveler Champions of the Continent - Falco_145: 394399103
+      Mobile - Octopath Traveler Champions of the Continent - Falco_146: -177003161
+      Mobile - Octopath Traveler Champions of the Continent - Falco_147: 1522695162
+      Mobile - Octopath Traveler Champions of the Continent - Falco_148: -962615782
+      Mobile - Octopath Traveler Champions of the Continent - Falco_149: -1313919183
+      Mobile - Octopath Traveler Champions of the Continent - Falco_15: 113344522
+      Mobile - Octopath Traveler Champions of the Continent - Falco_16: 1454322138
+      Mobile - Octopath Traveler Champions of the Continent - Falco_17: -1944095401
+      Mobile - Octopath Traveler Champions of the Continent - Falco_18: 1119909230
+      Mobile - Octopath Traveler Champions of the Continent - Falco_19: -651268747
+      Mobile - Octopath Traveler Champions of the Continent - Falco_2: -361845243
+      Mobile - Octopath Traveler Champions of the Continent - Falco_20: -1194244827
+      Mobile - Octopath Traveler Champions of the Continent - Falco_21: -1931526085
+      Mobile - Octopath Traveler Champions of the Continent - Falco_22: -1821331784
+      Mobile - Octopath Traveler Champions of the Continent - Falco_23: 254909390
+      Mobile - Octopath Traveler Champions of the Continent - Falco_24: -492070193
+      Mobile - Octopath Traveler Champions of the Continent - Falco_25: 1205072098
+      Mobile - Octopath Traveler Champions of the Continent - Falco_26: -912255840
+      Mobile - Octopath Traveler Champions of the Continent - Falco_27: -1916051532
+      Mobile - Octopath Traveler Champions of the Continent - Falco_28: 1111022725
+      Mobile - Octopath Traveler Champions of the Continent - Falco_29: -1118514226
+      Mobile - Octopath Traveler Champions of the Continent - Falco_3: 450387192
+      Mobile - Octopath Traveler Champions of the Continent - Falco_30: 243119449
+      Mobile - Octopath Traveler Champions of the Continent - Falco_31: 1677760145
+      Mobile - Octopath Traveler Champions of the Continent - Falco_32: -771620535
+      Mobile - Octopath Traveler Champions of the Continent - Falco_33: -262323486
+      Mobile - Octopath Traveler Champions of the Continent - Falco_34: -513379273
+      Mobile - Octopath Traveler Champions of the Continent - Falco_35: 1805917103
+      Mobile - Octopath Traveler Champions of the Continent - Falco_36: 577779944
+      Mobile - Octopath Traveler Champions of the Continent - Falco_37: -1432838028
+      Mobile - Octopath Traveler Champions of the Continent - Falco_38: -383277911
+      Mobile - Octopath Traveler Champions of the Continent - Falco_39: -877256009
+      Mobile - Octopath Traveler Champions of the Continent - Falco_4: -1680013243
+      Mobile - Octopath Traveler Champions of the Continent - Falco_40: 1442936778
+      Mobile - Octopath Traveler Champions of the Continent - Falco_41: -306095892
+      Mobile - Octopath Traveler Champions of the Continent - Falco_42: 687564947
+      Mobile - Octopath Traveler Champions of the Continent - Falco_43: 645618756
+      Mobile - Octopath Traveler Champions of the Continent - Falco_44: -520429917
+      Mobile - Octopath Traveler Champions of the Continent - Falco_45: 373131151
+      Mobile - Octopath Traveler Champions of the Continent - Falco_46: -2126764453
+      Mobile - Octopath Traveler Champions of the Continent - Falco_47: -1932166390
+      Mobile - Octopath Traveler Champions of the Continent - Falco_48: 973361946
+      Mobile - Octopath Traveler Champions of the Continent - Falco_49: -1533355226
+      Mobile - Octopath Traveler Champions of the Continent - Falco_5: -1228007266
+      Mobile - Octopath Traveler Champions of the Continent - Falco_50: -181627762
+      Mobile - Octopath Traveler Champions of the Continent - Falco_51: -1367989026
+      Mobile - Octopath Traveler Champions of the Continent - Falco_52: 2006285651
+      Mobile - Octopath Traveler Champions of the Continent - Falco_53: 1105089634
+      Mobile - Octopath Traveler Champions of the Continent - Falco_54: 1745853246
+      Mobile - Octopath Traveler Champions of the Continent - Falco_55: -2034560751
+      Mobile - Octopath Traveler Champions of the Continent - Falco_56: 884297913
+      Mobile - Octopath Traveler Champions of the Continent - Falco_57: 1209754161
+      Mobile - Octopath Traveler Champions of the Continent - Falco_58: -157643839
+      Mobile - Octopath Traveler Champions of the Continent - Falco_59: -1433505509
+      Mobile - Octopath Traveler Champions of the Continent - Falco_6: 1170913822
+      Mobile - Octopath Traveler Champions of the Continent - Falco_60: 1799574278
+      Mobile - Octopath Traveler Champions of the Continent - Falco_61: -750404059
+      Mobile - Octopath Traveler Champions of the Continent - Falco_62: -283589274
+      Mobile - Octopath Traveler Champions of the Continent - Falco_63: 1384856998
+      Mobile - Octopath Traveler Champions of the Continent - Falco_64: -1859491421
+      Mobile - Octopath Traveler Champions of the Continent - Falco_65: -43151692
+      Mobile - Octopath Traveler Champions of the Continent - Falco_66: -1792347197
+      Mobile - Octopath Traveler Champions of the Continent - Falco_67: 1067372600
+      Mobile - Octopath Traveler Champions of the Continent - Falco_68: -2100311668
+      Mobile - Octopath Traveler Champions of the Continent - Falco_69: 729977946
+      Mobile - Octopath Traveler Champions of the Continent - Falco_7: -967375353
+      Mobile - Octopath Traveler Champions of the Continent - Falco_70: -1023692317
+      Mobile - Octopath Traveler Champions of the Continent - Falco_71: 1209156638
+      Mobile - Octopath Traveler Champions of the Continent - Falco_72: -326387444
+      Mobile - Octopath Traveler Champions of the Continent - Falco_73: -438076380
+      Mobile - Octopath Traveler Champions of the Continent - Falco_74: 826220761
+      Mobile - Octopath Traveler Champions of the Continent - Falco_75: -1550301845
+      Mobile - Octopath Traveler Champions of the Continent - Falco_76: 777907072
+      Mobile - Octopath Traveler Champions of the Continent - Falco_77: 1028319501
+      Mobile - Octopath Traveler Champions of the Continent - Falco_78: 1141216135
+      Mobile - Octopath Traveler Champions of the Continent - Falco_79: 883178364
+      Mobile - Octopath Traveler Champions of the Continent - Falco_8: -379865929
+      Mobile - Octopath Traveler Champions of the Continent - Falco_80: -1771259961
+      Mobile - Octopath Traveler Champions of the Continent - Falco_81: 1621841671
+      Mobile - Octopath Traveler Champions of the Continent - Falco_82: 1736879449
+      Mobile - Octopath Traveler Champions of the Continent - Falco_83: -1559062053
+      Mobile - Octopath Traveler Champions of the Continent - Falco_84: 55359625
+      Mobile - Octopath Traveler Champions of the Continent - Falco_85: 617746116
+      Mobile - Octopath Traveler Champions of the Continent - Falco_86: 52611824
+      Mobile - Octopath Traveler Champions of the Continent - Falco_87: -835023346
+      Mobile - Octopath Traveler Champions of the Continent - Falco_88: 548785400
+      Mobile - Octopath Traveler Champions of the Continent - Falco_89: 1971004128
+      Mobile - Octopath Traveler Champions of the Continent - Falco_9: 1294366882
+      Mobile - Octopath Traveler Champions of the Continent - Falco_90: -1286314451
+      Mobile - Octopath Traveler Champions of the Continent - Falco_91: -1040754583
+      Mobile - Octopath Traveler Champions of the Continent - Falco_92: 1914800066
+      Mobile - Octopath Traveler Champions of the Continent - Falco_93: 1156264195
+      Mobile - Octopath Traveler Champions of the Continent - Falco_94: -147646784
+      Mobile - Octopath Traveler Champions of the Continent - Falco_95: -2041922526
+      Mobile - Octopath Traveler Champions of the Continent - Falco_96: -98311353
+      Mobile - Octopath Traveler Champions of the Continent - Falco_97: 1414407982
+      Mobile - Octopath Traveler Champions of the Continent - Falco_98: 989736607
+      Mobile - Octopath Traveler Champions of the Continent - Falco_99: -742538048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

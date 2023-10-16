@@ -10,49 +10,14 @@ public class GameManager : Singleton<GameManager>
     public Action onSave;
     public Action onLoad;
     public int saveIndex = 0;
+    public Vector2 spawnPosition;
 
     protected override void Awake()
     {
         base.Awake();
     }
 
-    void Start()
-    {
-    }
-
-    void Update()
-    {
-    }
-
-    public SaveData NewGame(int _index)
-    {
-        SetIndex(_index);
-        SaveManager.NewSave(SaveData, _index);
-        Save(SaveData, _index);
-        return SaveData;
-    }
-
-    public int GetIndex()
-    {
-        return saveIndex;
-    }
-
-    public void SetIndex(int _index)
-    {
-        saveIndex = _index;
-    }
-
-    public void QuickSave()
-    {
-        Save(SaveData, saveIndex);
-    }
-
-    public void QuickLoad()
-    {
-        Load(SaveData, saveIndex);
-    }
-
-    public void Save(SaveData data, int _index)
+    private void Save(SaveData data, int _index)
     {
         onSave?.Invoke();
         bool success = SaveManager.Save(data, _index);
@@ -66,7 +31,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    public void Load(SaveData data, int _index)
+    private void Load(SaveData data, int _index)
     {
         bool success = SaveManager.Load(data, _index);
         if (success)
@@ -79,11 +44,33 @@ public class GameManager : Singleton<GameManager>
             Debug.Log("Load Failed.");
         }
     }
+    public SaveData NewGame(int _index)
+    {
+        saveIndex = _index;
+        SaveManager.NewSave(SaveData, _index);
+        Save(SaveData, _index);
+        return SaveData;
+    }
 
+    public int GetIndex()
+    {
+        return saveIndex;
+    }
+
+    public void QuickSave()
+    {
+        Save(SaveData, saveIndex);
+    }
+
+    public void QuickLoad()
+    {
+        Load(SaveData, saveIndex);
+    }
+    
     public IEnumerator LoadScene(int _index)
     {
-        SetIndex(_index);
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Additive);
+        saveIndex = _index;
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("WorldMap", LoadSceneMode.Additive);
         bool done = true;
         while (done)
         {

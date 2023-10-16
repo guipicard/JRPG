@@ -5,23 +5,30 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // [SerializeField] private SaveData saveData;
-    [SerializeField] private Animator animator;
+    private Animator m_Animator;
+    private Transform m_Transform;
 
     private bool isRotated = false;
     private bool moving = false;
+    private static readonly int WalkingUp = Animator.StringToHash("WalkingUp");
+    private static readonly int WalkingDown = Animator.StringToHash("WalkingDown");
+    private static readonly int Walking = Animator.StringToHash("Walking");
+    private static readonly int Interact = Animator.StringToHash("Interact");
 
-    public void Save()
+    private void Save()
     {
         GameManager.Instance.SaveData.playerInWorldPosition = transform.position;
     }
-    public void Load()
+
+    private void Load()
     {
         transform.position = GameManager.Instance.SaveData.playerInWorldPosition;
     }
 
     private void Start()
     {
+        m_Animator = GetComponent<Animator>();
+        m_Transform = transform;
         GameManager.Instance.onSave += Save;
         GameManager.Instance.onLoad += Load;
     }
@@ -29,77 +36,90 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         moving = false;
-        if (Input.GetKey(KeyCode.D)) 
+        if (Time.timeScale > 0.0f)
         {
-            Vector2 pos = transform.position;
+            ProcessInput();
+        }
+
+        if (!moving)
+        {
+            m_Animator.SetBool(WalkingUp, false);
+            m_Animator.SetBool(WalkingDown, false);
+            m_Animator.SetBool(Walking, false);
+        }
+    }
+
+    private void ProcessInput()
+    {
+        if (Input.GetKey(KeyCode.D))
+        {
+            Vector2 pos = m_Transform.position;
 
             pos.x += 1.0f * Time.deltaTime;
 
-            transform.position = pos;
+            m_Transform.position = pos;
 
-            if(!isRotated)
+            if (!isRotated)
             {
-                transform.Rotate(0, 180, 0);
+                m_Transform.Rotate(0, 180, 0);
                 isRotated = true;
             }
 
-            animator.SetBool("Walking", true);
-            animator.SetBool("WalkingDown", false);
-            animator.SetBool("WalkingUp", false);
+            m_Animator.SetBool(Walking, true);
+            m_Animator.SetBool(WalkingDown, false);
+            m_Animator.SetBool(WalkingUp, false);
             moving = true;
         }
+
         if (Input.GetKey(KeyCode.A))
         {
-            Vector2 pos = transform.position;
+            Vector2 pos = m_Transform.position;
 
             pos.x -= 1.0f * Time.deltaTime;
 
-            transform.position = pos;
+            m_Transform.position = pos;
 
-            animator.SetBool("Walking", true);
-            animator.SetBool("WalkingDown", false);
-            animator.SetBool("WalkingUp", false);
+            m_Animator.SetBool(Walking, true);
+            m_Animator.SetBool(WalkingDown, false);
+            m_Animator.SetBool(WalkingUp, false);
             if (isRotated)
             {
-                transform.Rotate(0, 180, 0);
+                m_Transform.Rotate(0, 180, 0);
                 isRotated = false;
             }
+
             moving = true;
         }
+
         if (Input.GetKey(KeyCode.S))
         {
-            Vector2 pos = transform.position;
+            Vector2 pos = m_Transform.position;
 
             pos.y -= 1.0f * Time.deltaTime;
 
-            transform.position = pos;
+            m_Transform.position = pos;
 
-            animator.SetBool("WalkingDown", true);
-            animator.SetBool("Walking", false);
+            m_Animator.SetBool(WalkingDown, true);
+            m_Animator.SetBool(Walking, false);
             moving = true;
         }
+
         if (Input.GetKey(KeyCode.W))
         {
-            Vector2 pos = transform.position;
+            Vector2 pos = m_Transform.position;
 
             pos.y += 1.0f * Time.deltaTime;
 
-            transform.position = pos;
+            m_Transform.position = pos;
 
-            animator.SetBool("WalkingUp", true);
-            animator.SetBool("Walking", false);
+            m_Animator.SetBool(WalkingUp, true);
+            m_Animator.SetBool(Walking, false);
             moving = true;
         }
-        if(Input.GetKeyDown(KeyCode.E)) 
-        {
-            animator.SetTrigger("Interact");
-        }
-        if(!moving)
-        {
-            animator.SetBool("WalkingUp", false);
-            animator.SetBool("WalkingDown", false);
-            animator.SetBool("Walking", false);
-        }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            m_Animator.SetTrigger(Interact);
+        }
     }
 }

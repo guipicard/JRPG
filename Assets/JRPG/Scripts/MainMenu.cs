@@ -57,7 +57,7 @@ public class MainMenu : MonoBehaviour
     private void NewGame()
     {
         GameManager.Instance.NewGame(m_Selected);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("WorldMap");
     }
 
     public void NewGameMenu()

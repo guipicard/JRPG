@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JRPG/Scenes/MainMenu.unity
     guid: 3f1a382445ce2ec45bdb8c84116f6e51
-  - enabled: 1
+  - enabled: 0
     path: Assets/JRPG/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/JRPG/Scenes/WorldMap.unity
+    guid: c55c04c145127244c8f5910937b3aaec
   m_configObjects: {}

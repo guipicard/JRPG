@@ -89,7 +89,7 @@ public static class SaveManager
         {
             Debug.Log("purged");
         }
-        data.playerInWorldPosition = new Vector2(25.0f, -8.0f);
+        data.playerInWorldPosition = GameManager.Instance.spawnPosition;
         data.saveName = $"New Game {_index}";
         data.mapName = "New Map";
         data.party = new List<CharacterInstance>();

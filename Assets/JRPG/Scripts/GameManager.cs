@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -9,36 +10,24 @@ public class GameManager : Singleton<GameManager>
     public Action onSave;
     public Action onLoad;
     public int saveIndex = 0;
-    // Start is called before the first frame update
+
     protected override void Awake()
     {
         base.Awake();
     }
+
     void Start()
     {
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.N))
-        //{
-        //    NewGame();
-        //}
-        //if (Input.GetKeyDown(KeyCode.S))
-        //{
-        //    Save();
-        //}
-        //if (Input.GetKeyDown(KeyCode.L))
-        //{
-        //    Load();
-        //}
     }
+
     public SaveData NewGame(int _index)
     {
-        SaveManager.NewSave(SaveData, _index);
         SetIndex(_index);
+        SaveManager.NewSave(SaveData, _index);
         Save(SaveData, _index);
         return SaveData;
     }
@@ -82,8 +71,8 @@ public class GameManager : Singleton<GameManager>
         bool success = SaveManager.Load(data, _index);
         if (success)
         {
-            Debug.Log("Load Succeed ! !");
             onLoad?.Invoke();
+            Debug.Log("Load Succeed ! !");
         }
         else
         {
@@ -91,4 +80,23 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public IEnumerator LoadScene(int _index)
+    {
+        SetIndex(_index);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Additive);
+        bool done = true;
+        while (done)
+        {
+            if (asyncLoad.isDone)
+            {
+                Load(SaveData, saveIndex);
+                SceneManager.UnloadSceneAsync("MainMenu");
+                done = false;
+            }
+            else
+            {
+                yield return null;
+            }
+        }
+    }
 }

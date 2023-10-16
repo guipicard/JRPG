@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private SaveData saveData;
+    // [SerializeField] private SaveData saveData;
     [SerializeField] private Animator animator;
 
     private bool isRotated = false;
@@ -13,14 +13,19 @@ public class PlayerController : MonoBehaviour
 
     public void Save()
     {
-        saveData.playerInWorldPosition = transform.position;
+        GameManager.Instance.SaveData.playerInWorldPosition = transform.position;
     }
     public void Load()
     {
-        transform.position = saveData.playerInWorldPosition;
+        transform.position = GameManager.Instance.SaveData.playerInWorldPosition;
     }
 
-    // Update is called once per frame
+    private void Start()
+    {
+        GameManager.Instance.onSave += Save;
+        GameManager.Instance.onLoad += Load;
+    }
+
     void Update()
     {
         moving = false;

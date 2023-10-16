@@ -5,10 +5,35 @@ using UnityEngine;
 
 public static class SaveManager
 {
-    public static string SaveFolder => $"{Application.persistentDataPath }/Saves/";
-    public static string Extension => ".save";
+    private static string SaveFolder => $"{Application.persistentDataPath }/Saves/";
 
-    public static List<SaveData> savesList = new List<SaveData>{ null, null, null };
+    private static string Extension => ".save";
+
+    private static List<SaveData> savesList = new List<SaveData>{ HasData(0), HasData(1), HasData(2) };
+
+    private static SaveData HasData(int _index)
+    {
+        string saveName = $"Save{_index}{Extension}";
+        string jsonData = "";
+
+        if (!System.IO.File.Exists(SaveFolder + saveName))
+        {
+            return null;
+        }
+        try
+        {
+            jsonData = System.IO.File.ReadAllText(SaveFolder + saveName);
+        }
+        catch (Exception e)
+        {
+            Debug.Log($"[SAVEMANAGER] {e}");
+            return null;
+        }
+
+        SaveData data = ScriptableObject.CreateInstance<SaveData>();
+        JsonUtility.FromJsonOverwrite(jsonData, data);
+        return data;
+    }
 
     public static bool Save(SaveData _data, int _index)
     {
@@ -53,12 +78,12 @@ public static class SaveManager
             Debug.Log($"[SAVEMANAGER] {e}");
             return false;
         }
-        data = savesList[_index];
         JsonUtility.FromJsonOverwrite(jsonData, data);
+        savesList[_index] = data;
         return true;
     }
 
-    public static SaveData NewSave(SaveData data, int _index)
+    public static void NewSave(SaveData data, int _index)
     {
         if (savesList[_index] != null)
         {
@@ -68,8 +93,5 @@ public static class SaveManager
         data.saveName = $"New Game {_index}";
         data.mapName = "New Map";
         data.party = new List<CharacterInstance>();
-
-        savesList[_index] = data;
-        return data;   
     }
 }

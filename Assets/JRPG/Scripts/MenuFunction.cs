@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunction : MonoBehaviour
 {
-    private bool m_Pause = true;
+    private bool m_Pause;
     [SerializeField] private GameObject m_MenuScreen;
     // Start is called before the first frame update
     void Start()
     {
-        Pause();
+        m_Pause = false;
+        Time.timeScale = 1.0f;
+        m_MenuScreen.SetActive(false);
     }
 
     // Update is called once per frame

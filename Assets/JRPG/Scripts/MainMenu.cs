@@ -3,97 +3,108 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject Menu;
     [SerializeField] GameObject NewGamesMenu;
     [SerializeField] GameObject LoadsMenu;
-    private Stack<GameObject> gameList = new Stack<GameObject>();
-    // Start is called before the first frame update
+    [SerializeField] List<Button> m_NewGameButtons;
+    [SerializeField] List<Button> m_LoadButtons;
+    
+    private Stack<GameObject> m_menuStack = new Stack<GameObject>();
+    private int m_Selected;
+    
     void Start()
     {
+        m_Selected = -1;
         NewGamesMenu.SetActive(false);
         LoadsMenu.SetActive(false);
         Menu.SetActive(true);
-        gameList.Push(Menu);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        m_menuStack.Push(Menu);
     }
 
     private void ActivateMenu(GameObject _menu)
     {
-        gameList.Peek().SetActive(false);
+        m_menuStack.Peek().SetActive(false);
         _menu.SetActive(true);
-        gameList.Push(_menu);
+        m_menuStack.Push(_menu);
     }
 
     private void DeactivateMenu()
     {
-        gameList.Peek().SetActive(false);
-        gameList.Pop();
-        gameList.Peek().SetActive(true);
+        m_menuStack.Peek().SetActive(false);
+        m_menuStack.Pop();
+        m_menuStack.Peek().SetActive(true);
+    }
+    
+    private void Load()
+    {
+        StartCoroutine(GameManager.Instance.LoadScene(m_Selected));
     }
 
-    public void NewGame()
+    private void NewGame()
+    {
+        GameManager.Instance.NewGame(m_Selected);
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void NewGameMenu()
     {
         ActivateMenu(NewGamesMenu);
     }
 
-    public void LoadGame()
+    public void LoadGameMenu()
     {
         ActivateMenu(LoadsMenu);
     }
-
-    public void LastMenu()
-    {
-        DeactivateMenu();
-    }
-
-    public void QuitGame()
+    
+    public virtual void QuitGame()
     {
         Application.Quit();
     }
 
-    public void Load1()
+
+    public void SelectButton(int _index)
     {
-        GameManager.Instance.SetIndex(1);
-        SceneManager.LoadScene("SampleScene");
+        if (m_menuStack.Peek() == LoadsMenu)
+        {
+            if (m_Selected != -1)m_LoadButtons[m_Selected].Select();
+            m_LoadButtons[_index].Select();
+        }
+        else if (m_menuStack.Peek() == NewGamesMenu)
+        {
+            if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
+            m_NewGameButtons[_index].Select();
+        }
+        m_Selected = _index;
     }
 
-    public void Load2()
+    public void StartButton()
     {
-        GameManager.Instance.SetIndex(2);
-        SceneManager.LoadScene("SampleScene");
-        //GameManager.Instance.Load(2);
+        if (m_Selected == -1) return;
+        if (m_menuStack.Peek() == LoadsMenu)
+        {
+            Load();
+        }
+        else if (m_menuStack.Peek() == NewGamesMenu)
+        {
+            NewGame();
+        }
     }
-
-    public void Load3()
+    
+    public void LastMenu()
     {
-        GameManager.Instance.SetIndex(3);
-        SceneManager.LoadScene("SampleScene");
-        //GameManager.Instance.Load(3);
-    }
-
-    public void NewGame1()
-    {
-        GameManager.Instance.NewGame(1);
-        SceneManager.LoadScene("SampleScene");
-    }
-
-    public void NewGame2()
-    {
-        GameManager.Instance.NewGame(2);
-        SceneManager.LoadScene("SampleScene");
-    }
-
-    public void NewGame3()
-    {
-        GameManager.Instance.NewGame(3);
-        SceneManager.LoadScene("SampleScene");
+        if (m_menuStack.Peek() == LoadsMenu)
+        {
+            if (m_Selected != -1) m_LoadButtons[m_Selected].Select();
+        }
+        else if (m_menuStack.Peek() == NewGamesMenu)
+        {
+            if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
+        }
+        DeactivateMenu();
+        m_Selected = -1;
     }
 }

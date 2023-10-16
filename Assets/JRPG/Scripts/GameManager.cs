@@ -99,4 +99,18 @@ public class GameManager : Singleton<GameManager>
             }
         }
     }
+
+    public bool HasSave(int _index)
+    {
+        if (SaveManager.HasData(_index) == null)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    public void DeleteSave(int _index)
+    {
+        SaveManager.DeleteSave(_index);
+    }
 }

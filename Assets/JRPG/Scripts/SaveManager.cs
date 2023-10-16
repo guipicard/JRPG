@@ -9,9 +9,9 @@ public static class SaveManager
 
     private static string Extension => ".save";
 
-    private static List<SaveData> savesList = new List<SaveData>{ HasData(0), HasData(1), HasData(2) };
+    private static List<SaveData> m_SavesList = new List<SaveData>{ HasData(0), HasData(1), HasData(2) };
 
-    private static SaveData HasData(int _index)
+    public static SaveData HasData(int _index)
     {
         string saveName = $"Save{_index}{Extension}";
         string jsonData = "";
@@ -51,7 +51,7 @@ public static class SaveManager
         }
         if (!System.IO.Directory.Exists(SaveFolder))
         {
-            savesList[_index] = _data;
+            m_SavesList[_index] = _data;
             System.IO.Directory.CreateDirectory(SaveFolder);
         }
         System.IO.File.WriteAllText(SaveFolder + saveName, jsonData);
@@ -79,13 +79,13 @@ public static class SaveManager
             return false;
         }
         JsonUtility.FromJsonOverwrite(jsonData, data);
-        savesList[_index] = data;
+        m_SavesList[_index] = data;
         return true;
     }
 
     public static void NewSave(SaveData data, int _index)
     {
-        if (savesList[_index] != null)
+        if (m_SavesList[_index] != null)
         {
             Debug.Log("purged");
         }
@@ -93,5 +93,12 @@ public static class SaveManager
         data.saveName = $"New Game {_index}";
         data.mapName = "New Map";
         data.party = new List<CharacterInstance>();
+    }
+
+    public static void DeleteSave(int _index)
+    {
+        m_SavesList[_index] = null;
+        string saveName = $"Save{_index}{Extension}";
+        System.IO.File.Delete(SaveFolder + saveName);
     }
 }

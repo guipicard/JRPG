@@ -391,6 +391,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152732073}
   m_CullTransparentMesh: 1
+--- !u!1 &154162311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154162313}
+  - component: {fileID: 154162312}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &154162312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154162311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6efea356d9dc94da43e17cb2d42d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sounds:
+  - m_name: Menu
+    m_clip: {fileID: 8300000, guid: d8ff1e5d354a28d4f878e952a3ba5e80, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: OpenMap
+    m_clip: {fileID: 8300000, guid: fb0930c38fae1c741b28de27c7f847b1, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: CombatMap
+    m_clip: {fileID: 8300000, guid: 7689d8050d340e84ba5bc13691efa1ce, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: Button
+    m_clip: {fileID: 0}
+    m_volume: 0
+    m_pitch: 0
+    m_loop: 1
+    m_source: {fileID: 0}
+--- !u!4 &154162313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154162311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.252478, y: -5.7414527, z: -17.091204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276064907
 GameObject:
   m_ObjectHideFlags: 0
@@ -4388,3 +4457,4 @@ SceneRoots:
   - {fileID: 1066576750}
   - {fileID: 519231585}
   - {fileID: 1787654967}
+  - {fileID: 154162313}

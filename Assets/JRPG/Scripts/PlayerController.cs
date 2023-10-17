@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     private Animator m_Animator;
     private Transform m_Transform;
 
-    private bool isRotated = false;
-    private bool moving = false;
+    private bool m_IsRotated = false;
+    private bool m_Moving = false;
     private static readonly int WalkingUp = Animator.StringToHash("WalkingUp");
     private static readonly int WalkingDown = Animator.StringToHash("WalkingDown");
     private static readonly int Walking = Animator.StringToHash("Walking");
@@ -17,31 +17,31 @@ public class PlayerController : MonoBehaviour
 
     private void Save()
     {
-        GameManager.Instance.SaveData.playerInWorldPosition = transform.position;
+        GameManager.Instance.m_SaveData.playerInWorldPosition = transform.position;
     }
 
     private void Load()
     {
-        transform.position = GameManager.Instance.SaveData.playerInWorldPosition;
+        transform.position = GameManager.Instance.m_SaveData.playerInWorldPosition;
     }
 
     private void Start()
     {
         m_Animator = GetComponent<Animator>();
         m_Transform = transform;
-        GameManager.Instance.onSave += Save;
-        GameManager.Instance.onLoad += Load;
+        GameManager.Instance.m_OnSave += Save;
+        GameManager.Instance.m_OnLoad += Load;
     }
 
     void Update()
     {
-        moving = false;
+        m_Moving = false;
         if (Time.timeScale > 0.0f)
         {
             ProcessInput();
         }
 
-        if (!moving)
+        if (!m_Moving)
         {
             m_Animator.SetBool(WalkingUp, false);
             m_Animator.SetBool(WalkingDown, false);
@@ -59,16 +59,16 @@ public class PlayerController : MonoBehaviour
 
             m_Transform.position = pos;
 
-            if (!isRotated)
+            if (!m_IsRotated)
             {
                 m_Transform.Rotate(0, 180, 0);
-                isRotated = true;
+                m_IsRotated = true;
             }
 
             m_Animator.SetBool(Walking, true);
             m_Animator.SetBool(WalkingDown, false);
             m_Animator.SetBool(WalkingUp, false);
-            moving = true;
+            m_Moving = true;
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -82,13 +82,13 @@ public class PlayerController : MonoBehaviour
             m_Animator.SetBool(Walking, true);
             m_Animator.SetBool(WalkingDown, false);
             m_Animator.SetBool(WalkingUp, false);
-            if (isRotated)
+            if (m_IsRotated)
             {
                 m_Transform.Rotate(0, 180, 0);
-                isRotated = false;
+                m_IsRotated = false;
             }
 
-            moving = true;
+            m_Moving = true;
         }
 
         if (Input.GetKey(KeyCode.S))
@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
             m_Animator.SetBool(WalkingDown, true);
             m_Animator.SetBool(Walking, false);
-            moving = true;
+            m_Moving = true;
         }
 
         if (Input.GetKey(KeyCode.W))
@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
 
             m_Animator.SetBool(WalkingUp, true);
             m_Animator.SetBool(Walking, false);
-            moving = true;
+            m_Moving = true;
         }
 
         if (Input.GetKeyDown(KeyCode.E))

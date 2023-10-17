@@ -52,8 +52,8 @@ public class MenuFunction : MonoBehaviour
 
     public void MainMenuexit()
     {
-        GameManager.Instance.onLoad = null;
-        GameManager.Instance.onSave = null;
+        GameManager.Instance.m_OnLoad = null;
+        GameManager.Instance.m_OnSave = null;
         SceneManager.LoadScene("MainMenu");
     }
 }

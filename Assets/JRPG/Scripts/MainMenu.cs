@@ -5,12 +5,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] GameObject Menu;
-    [SerializeField] GameObject NewGamesMenu;
-    [SerializeField] GameObject LoadsMenu;
+    [SerializeField] GameObject m_Menu;
+    [SerializeField] GameObject m_NewGamesMenu;
+    [SerializeField] GameObject m_LoadsMenu;
     [SerializeField] List<Button> m_NewGameButtons;
     [SerializeField] List<Button> m_LoadButtons;
     
@@ -20,10 +21,10 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         m_Selected = -1;
-        NewGamesMenu.SetActive(false);
-        LoadsMenu.SetActive(false);
-        Menu.SetActive(true);
-        m_MenuStack.Push(Menu);
+        m_NewGamesMenu.SetActive(false);
+        m_LoadsMenu.SetActive(false);
+        m_Menu.SetActive(true);
+        m_MenuStack.Push(m_Menu);
         for (int i = 0; i < m_LoadButtons.Count; i++)
         {
             m_LoadButtons[i].interactable = GameManager.Instance.HasSave(i);
@@ -62,12 +63,12 @@ public class MainMenu : MonoBehaviour
 
     public void NewGameMenu()
     {
-        ActivateMenu(NewGamesMenu);
+        ActivateMenu(m_NewGamesMenu);
     }
 
     public void LoadGameMenu()
     {
-        ActivateMenu(LoadsMenu);
+        ActivateMenu(m_LoadsMenu);
     }
     
     public virtual void QuitGame()
@@ -78,12 +79,12 @@ public class MainMenu : MonoBehaviour
 
     public void SelectButton(int _index)
     {
-        if (m_MenuStack.Peek() == LoadsMenu)
+        if (m_MenuStack.Peek() == m_LoadsMenu)
         {
             if (m_Selected != -1)m_LoadButtons[m_Selected].Select();
             m_LoadButtons[_index].Select();
         }
-        else if (m_MenuStack.Peek() == NewGamesMenu)
+        else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
             if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
             m_NewGameButtons[_index].Select();
@@ -94,11 +95,11 @@ public class MainMenu : MonoBehaviour
     public void StartButton()
     {
         if (m_Selected == -1) return;
-        if (m_MenuStack.Peek() == LoadsMenu)
+        if (m_MenuStack.Peek() == m_LoadsMenu)
         {
             Load();
         }
-        else if (m_MenuStack.Peek() == NewGamesMenu)
+        else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
             NewGame();
         }
@@ -106,11 +107,11 @@ public class MainMenu : MonoBehaviour
     
     public void LastMenu()
     {
-        if (m_MenuStack.Peek() == LoadsMenu)
+        if (m_MenuStack.Peek() == m_LoadsMenu)
         {
             if (m_Selected != -1) m_LoadButtons[m_Selected].Select();
         }
-        else if (m_MenuStack.Peek() == NewGamesMenu)
+        else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
             if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
         }

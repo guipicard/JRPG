@@ -3,14 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class GameManager : Singleton<GameManager>
 {
-    public SaveData SaveData;
-    public Action onSave;
-    public Action onLoad;
-    public int saveIndex = 0;
-    public Vector2 spawnPosition;
+    public SaveData m_SaveData;
+    public Action m_OnSave;
+    public Action m_OnLoad;
+    public int m_SaveIndex;
+    public Vector2 m_SpawnPosition;
 
     protected override void Awake()
     {
@@ -19,7 +20,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Save(SaveData data, int _index)
     {
-        onSave?.Invoke();
+        m_SaveIndex = 0;
+        m_OnSave?.Invoke();
         bool success = SaveManager.Save(data, _index);
         if (success)
         {
@@ -36,7 +38,7 @@ public class GameManager : Singleton<GameManager>
         bool success = SaveManager.Load(data, _index);
         if (success)
         {
-            onLoad?.Invoke();
+            m_OnLoad?.Invoke();
             Debug.Log("Load Succeed ! !");
         }
         else
@@ -46,37 +48,37 @@ public class GameManager : Singleton<GameManager>
     }
     public SaveData NewGame(int _index)
     {
-        saveIndex = _index;
-        SaveManager.NewSave(SaveData, _index);
-        Save(SaveData, _index);
-        return SaveData;
+        m_SaveIndex = _index;
+        SaveManager.NewSave(m_SaveData, _index);
+        Save(m_SaveData, _index);
+        return m_SaveData;
     }
 
     public int GetIndex()
     {
-        return saveIndex;
+        return m_SaveIndex;
     }
 
     public void QuickSave()
     {
-        Save(SaveData, saveIndex);
+        Save(m_SaveData, m_SaveIndex);
     }
 
     public void QuickLoad()
     {
-        Load(SaveData, saveIndex);
+        Load(m_SaveData, m_SaveIndex);
     }
     
     public IEnumerator LoadScene(int _index)
     {
-        saveIndex = _index;
+        m_SaveIndex = _index;
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("WorldMap", LoadSceneMode.Additive);
         bool done = true;
         while (done)
         {
             if (asyncLoad.isDone)
             {
-                Load(SaveData, saveIndex);
+                Load(m_SaveData, m_SaveIndex);
                 SceneManager.UnloadSceneAsync("MainMenu");
                 done = false;
             }

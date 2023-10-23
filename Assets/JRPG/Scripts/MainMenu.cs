@@ -118,10 +118,10 @@ public class MainMenu : MonoBehaviour
 
     public void LastMenu()
     {
+        AudioMan._instance.Play("Button");
         if (m_MenuStack.Peek() == m_LoadsMenu)
         {
             if (m_Selected != -1) m_LoadButtons[m_Selected].Select();
-            AudioMan._instance.Play("Button");
         }
         else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {

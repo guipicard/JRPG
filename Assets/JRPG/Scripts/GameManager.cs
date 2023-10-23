@@ -11,7 +11,8 @@ public class GameManager : Singleton<GameManager>
     public Action m_OnSave;
     public Action m_OnLoad;
     public int m_SaveIndex;
-    public Vector2 m_SpawnPosition;
+    [SerializeField] public Vector2 m_SpawnPosition = new Vector2(25, -8);
+    public GameObject audioListener;
 
     protected override void Awake()
     {

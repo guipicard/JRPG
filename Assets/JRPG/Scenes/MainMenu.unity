@@ -466,7 +466,7 @@ MonoBehaviour:
   - m_name: Interact
     m_clip: {fileID: 8300000, guid: 0b558addebc15af45bc38776b3f78715, type: 3}
     m_volume: 1
-    m_pitch: 0
+    m_pitch: 1
     m_loop: 0
     m_source: {fileID: 0}
 --- !u!4 &154162313
@@ -3623,7 +3623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Menu: {fileID: 937227019}
-  m_NewGamesMenu: {fileID: 1866750867}
+  m_NewGamesMenu: {fileID: 1980311390}
   m_LoadsMenu: {fileID: 2105327320}
   m_NewGameButtons:
   - {fileID: 1040745306}
@@ -4046,11 +4046,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: m_SaveData
+      value: 
+      objectReference: {fileID: 11400000, guid: 778f5486c537477449b8ad7911b21254, type: 2}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: audioListener
+      value: 
+      objectReference: {fileID: 1541785678}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
       propertyPath: spawnPosition.x
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
       propertyPath: spawnPosition.y
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: m_SpawnPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: m_SpawnPosition.y
       value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []

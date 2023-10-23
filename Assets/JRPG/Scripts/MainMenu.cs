@@ -14,10 +14,10 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject m_LoadsMenu;
     [SerializeField] List<Button> m_NewGameButtons;
     [SerializeField] List<Button> m_LoadButtons;
-    
+
     private Stack<GameObject> m_MenuStack = new Stack<GameObject>();
     private int m_Selected;
-    
+
     void Start()
     {
         m_Selected = -1;
@@ -49,30 +49,30 @@ public class MainMenu : MonoBehaviour
         m_MenuStack.Pop();
         m_MenuStack.Peek().SetActive(true);
     }
-    
+
     private void Load()
     {
+        AudioMan._instance.Play("Button");
         StartCoroutine(GameManager.Instance.LoadScene(m_Selected));
     }
 
     private void NewGame()
     {
         GameManager.Instance.NewGame(m_Selected);
-        SceneManager.LoadScene("WorldMap");
     }
 
     public void NewGameMenu()
     {
-        ActivateMenu(m_NewGamesMenu);
         AudioMan._instance.Play("Button");
+        ActivateMenu(m_NewGamesMenu);
     }
 
     public void LoadGameMenu()
     {
-        ActivateMenu(m_LoadsMenu);
         AudioMan._instance.Play("Button");
+        ActivateMenu(m_LoadsMenu);
     }
-    
+
     public virtual void QuitGame()
     {
         AudioMan._instance.Play("Button");
@@ -84,44 +84,54 @@ public class MainMenu : MonoBehaviour
     {
         if (m_MenuStack.Peek() == m_LoadsMenu)
         {
-            if (m_Selected != -1)m_LoadButtons[m_Selected].Select();
+            if (m_Selected != -1) m_LoadButtons[m_Selected].Select();
             m_LoadButtons[_index].Select();
+            AudioMan._instance.Play("Button");
         }
         else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
             if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
             m_NewGameButtons[_index].Select();
+            AudioMan._instance.Play("Button");
         }
         m_Selected = _index;
     }
 
     public void StartButton()
     {
-        if (m_Selected == -1) return;
+        if (m_Selected == -1)
+        {
+            AudioMan._instance.Play("ButtonFailed");
+            return;
+        }
         if (m_MenuStack.Peek() == m_LoadsMenu)
         {
+            AudioMan._instance.Play("Button");
             Load();
         }
         else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
+            AudioMan._instance.Play("Button");
             NewGame();
         }
     }
-    
+
     public void LastMenu()
     {
         if (m_MenuStack.Peek() == m_LoadsMenu)
         {
             if (m_Selected != -1) m_LoadButtons[m_Selected].Select();
+            AudioMan._instance.Play("Button");
         }
         else if (m_MenuStack.Peek() == m_NewGamesMenu)
         {
             if (m_Selected != -1) m_NewGameButtons[m_Selected].Select();
+
         }
         DeactivateMenu();
         m_Selected = -1;
     }
-    
+
     public void DeleteSave()
     {
         if (m_Selected != -1)
@@ -130,6 +140,11 @@ public class MainMenu : MonoBehaviour
             m_LoadButtons[m_Selected].Select();
             m_LoadButtons[m_Selected].interactable = false;
             m_Selected = -1;
+            AudioMan._instance.Play("Button");
+        }
+        else
+        {
+            AudioMan._instance.Play("ButtonFailed");
         }
     }
 }

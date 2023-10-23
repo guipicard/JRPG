@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JRPG/Scenes/WorldMap.unity
     guid: c55c04c145127244c8f5910937b3aaec
+  - enabled: 1
+    path: Assets/JRPG/Scenes/CombatScene.unity
+    guid: a0ae75d747f7d784bb197b171ef03ca6
   m_configObjects: {}

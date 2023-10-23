@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool walkingCoroutineStarted = false;
     private Coroutine walkingCoroutine;
 
+    private bool isInCombatTrigger = false;
     private void Save()
     {
         GameManager.Instance.m_SaveData.playerInWorldPosition = transform.position;
@@ -128,6 +130,11 @@ public class PlayerController : MonoBehaviour
         {
             m_Animator.SetTrigger(Interact);
             AudioMan._instance.Play("Interact");
+            if (isInCombatTrigger)
+            {
+                StopCoroutine(walkingCoroutine);
+                SceneManager.LoadScene("CombatScene");
+            }
         }
 
         if(xValue == 0 && yValue == 0 && walkingCoroutineStarted)
@@ -136,7 +143,6 @@ public class PlayerController : MonoBehaviour
             walkingCoroutineStarted = false;
         }
     }
-
     
     public IEnumerator MovementSound()
     {
@@ -145,5 +151,15 @@ public class PlayerController : MonoBehaviour
             AudioMan._instance.Play("Steps");
             yield return new WaitForSeconds(0.5f);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        isInCombatTrigger = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isInCombatTrigger = false;
     }
 }

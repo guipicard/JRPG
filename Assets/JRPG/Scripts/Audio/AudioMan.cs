@@ -9,6 +9,9 @@ public class AudioMan : MonoBehaviour
     [SerializeField] public AudioPool[] m_sounds;
     private static AudioMan m_instance;
     public static AudioMan _instance => m_instance;
+    private bool menuPlaying = false;
+    private bool combatPlaying = false;
+    private bool openMapPlaying = false;
 
     private void Awake()
     {
@@ -35,9 +38,35 @@ public class AudioMan : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Update()
     {
-        m_instance.Play("Menu");
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu") && !menuPlaying)
+        {
+            m_instance.Stop("OpenMap");
+            m_instance.Stop("CombatMap");
+            m_instance.Play("Menu");
+            menuPlaying = true;
+            openMapPlaying = false;
+            combatPlaying = false;
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("WorldMap") && !openMapPlaying)
+        {
+            m_instance.Stop("Menu");
+            m_instance.Stop("CombatMap");
+            m_instance.Play("OpenMap");
+            openMapPlaying = true;
+            menuPlaying = false;
+            combatPlaying = false;
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CombatScene") && !combatPlaying)
+        {
+            m_instance.Stop("OpenMap");
+            m_instance.Stop("Menu");
+            m_instance.Play("CombatMap");
+            combatPlaying = true;
+            openMapPlaying = false;
+            menuPlaying = false;
+        }
     }
 
     public void Play(string name)

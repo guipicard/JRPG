@@ -18,14 +18,14 @@
  </tile>
  <tile id="122">
   <objectgroup draworder="index" id="2">
-   <object id="1" x="15.9915" y="18.6284">
+   <object id="1" x="7.74057" y="8.93143" width="18.033" height="17.2674">
     <ellipse/>
    </object>
   </objectgroup>
  </tile>
  <tile id="123">
   <objectgroup draworder="index" id="2">
-   <object id="1" x="15.9915" y="18.033">
+   <object id="1" x="7.2302" y="8.67627" width="18" height="18">
     <ellipse/>
    </object>
   </objectgroup>
@@ -52,17 +52,14 @@
  </tile>
  <tile id="180">
   <objectgroup draworder="index" id="2">
-   <object id="1" x="16.1616" y="18.5433">
+   <object id="1" x="7.65549" y="8.50609" width="18" height="18">
     <ellipse/>
    </object>
   </objectgroup>
  </tile>
  <tile id="181">
   <objectgroup draworder="index" id="3">
-   <object id="2" x="0.0850611" y="0.0850611" width="31.8129" height="31.7278"/>
-   <object id="3" x="0.170122" y="0.0850611" width="31.7278" height="31.7278"/>
-   <object id="4" x="0" y="0" width="32" height="32"/>
-   <object id="6" x="16.0766" y="17.6927">
+   <object id="6" x="7.40036" y="8.42104" width="18" height="18">
     <ellipse/>
    </object>
   </objectgroup>

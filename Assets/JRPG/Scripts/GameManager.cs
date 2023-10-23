@@ -25,6 +25,7 @@ public class GameManager : Singleton<GameManager>
         bool success = SaveManager.Save(data, _index);
         if (success)
         {
+            AudioMan._instance.Play("Load");
             Debug.Log("Save Succeed ! !");
         }
         else
@@ -39,6 +40,7 @@ public class GameManager : Singleton<GameManager>
         if (success)
         {
             m_OnLoad?.Invoke();
+            AudioMan._instance.Play("Load");
             Debug.Log("Load Succeed ! !");
         }
         else

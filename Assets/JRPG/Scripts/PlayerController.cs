@@ -5,15 +5,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Rigidbody2D rigidbody;
     private Animator m_Animator;
     private Transform m_Transform;
 
     private bool m_IsRotated = false;
-    private bool m_Moving = false;
     private static readonly int WalkingUp = Animator.StringToHash("WalkingUp");
     private static readonly int WalkingDown = Animator.StringToHash("WalkingDown");
     private static readonly int Walking = Animator.StringToHash("Walking");
     private static readonly int Interact = Animator.StringToHash("Interact");
+
+    private float m_playerSpeed = 1.0f;
+    private bool walkingCoroutineStarted = false;
+    private Coroutine walkingCoroutine;
 
     private void Save()
     {
@@ -35,29 +39,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        m_Moving = false;
         if (Time.timeScale > 0.0f)
         {
             ProcessInput();
-        }
-
-        if (!m_Moving)
-        {
-            m_Animator.SetBool(WalkingUp, false);
-            m_Animator.SetBool(WalkingDown, false);
-            m_Animator.SetBool(Walking, false);
         }
     }
 
     private void ProcessInput()
     {
+        float xValue = 0;
+        float yValue = 0;
+
+        float xAxis = Input.GetAxis("Horizontal");
+        float yAxis = Input.GetAxis("Vertical");
+        Vector3 velocity = rigidbody.velocity;
+        velocity.x = xAxis * m_playerSpeed;
+        velocity.y = yAxis * m_playerSpeed;
+        rigidbody.velocity = velocity;
+
         if (Input.GetKey(KeyCode.D))
         {
-            Vector2 pos = m_Transform.position;
-
-            pos.x += 1.0f * Time.deltaTime;
-
-            m_Transform.position = pos;
+            xValue = 1;
 
             if (!m_IsRotated)
             {
@@ -65,61 +67,83 @@ public class PlayerController : MonoBehaviour
                 m_IsRotated = true;
             }
 
-            m_Animator.SetBool(Walking, true);
-            m_Animator.SetBool(WalkingDown, false);
-            m_Animator.SetBool(WalkingUp, false);
-            m_Moving = true;
+            m_Animator.SetFloat("XInput", xValue);
+            if(!walkingCoroutineStarted)
+            {
+                walkingCoroutine = StartCoroutine(MovementSound());
+                walkingCoroutineStarted = true;
+            }
         }
-
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
-            Vector2 pos = m_Transform.position;
+            xValue = -1;
 
-            pos.x -= 1.0f * Time.deltaTime;
-
-            m_Transform.position = pos;
-
-            m_Animator.SetBool(Walking, true);
-            m_Animator.SetBool(WalkingDown, false);
-            m_Animator.SetBool(WalkingUp, false);
+            m_Animator.SetFloat("XInput", xValue);
             if (m_IsRotated)
             {
                 m_Transform.Rotate(0, 180, 0);
                 m_IsRotated = false;
             }
-
-            m_Moving = true;
+            if (!walkingCoroutineStarted)
+            {
+                walkingCoroutine = StartCoroutine(MovementSound());
+                walkingCoroutineStarted = true;
+            }
+        }
+        else
+        {
+            xValue = 0;
+            m_Animator.SetFloat("XInput", xValue);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            Vector2 pos = m_Transform.position;
+            yValue = -1;
 
-            pos.y -= 1.0f * Time.deltaTime;
-
-            m_Transform.position = pos;
-
-            m_Animator.SetBool(WalkingDown, true);
-            m_Animator.SetBool(Walking, false);
-            m_Moving = true;
+            m_Animator.SetFloat("YInput", yValue);
+            if (!walkingCoroutineStarted)
+            {
+                walkingCoroutine = StartCoroutine(MovementSound());
+                walkingCoroutineStarted = true;
+            }
         }
-
-        if (Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W))
         {
-            Vector2 pos = m_Transform.position;
+            yValue = 1;
 
-            pos.y += 1.0f * Time.deltaTime;
-
-            m_Transform.position = pos;
-
-            m_Animator.SetBool(WalkingUp, true);
-            m_Animator.SetBool(Walking, false);
-            m_Moving = true;
+            m_Animator.SetFloat("YInput", yValue);
+            if (!walkingCoroutineStarted)
+            {
+                walkingCoroutine = StartCoroutine(MovementSound());
+                walkingCoroutineStarted = true;
+            }
+        }
+        else
+        {
+            yValue = 0;
+            m_Animator.SetFloat("YInput", yValue);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             m_Animator.SetTrigger(Interact);
+            AudioMan._instance.Play("Interact");
+        }
+
+        if(xValue == 0 && yValue == 0 && walkingCoroutineStarted)
+        {
+            StopCoroutine(walkingCoroutine);
+            walkingCoroutineStarted = false;
+        }
+    }
+
+    
+    public IEnumerator MovementSound()
+    {
+        while(true)
+        {
+            AudioMan._instance.Play("Steps");
+            yield return new WaitForSeconds(0.5f);
         }
     }
 }

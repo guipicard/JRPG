@@ -64,15 +64,18 @@ public class MainMenu : MonoBehaviour
     public void NewGameMenu()
     {
         ActivateMenu(m_NewGamesMenu);
+        AudioMan._instance.Play("Button");
     }
 
     public void LoadGameMenu()
     {
         ActivateMenu(m_LoadsMenu);
+        AudioMan._instance.Play("Button");
     }
     
     public virtual void QuitGame()
     {
+        AudioMan._instance.Play("Button");
         Application.Quit();
     }
 

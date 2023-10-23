@@ -286,9 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b7baeb5ab910a4f8e688ac7d75c51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaveData: {fileID: 0}
-  saveIndex: 0
-  spawnPosition: {x: 0, y: 0}
+  m_SaveData: {fileID: 0}
+  m_SaveIndex: 0
+  m_SpawnPosition: {x: 0, y: 0}
 --- !u!4 &187725988
 Transform:
   m_ObjectHideFlags: 0
@@ -1594,6 +1594,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1515248073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515248075}
+  - component: {fileID: 1515248074}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1515248074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515248073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6efea356d9dc94da43e17cb2d42d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sounds:
+  - m_name: Menu
+    m_clip: {fileID: 8300000, guid: d8ff1e5d354a28d4f878e952a3ba5e80, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: OpenMap
+    m_clip: {fileID: 8300000, guid: a405305793fb9314bacfeb78c5961dfa, type: 3}
+    m_volume: 0.3
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: CombatMap
+    m_clip: {fileID: 8300000, guid: 7689d8050d340e84ba5bc13691efa1ce, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 1
+    m_source: {fileID: 0}
+  - m_name: Button
+    m_clip: {fileID: 8300000, guid: d32eb890f14f4304c83503756eb6eccd, type: 3}
+    m_volume: 1
+    m_pitch: 0
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Save
+    m_clip: {fileID: 8300000, guid: 8bbf2c22b08c12441ae12fb2316255e0, type: 3}
+    m_volume: 1
+    m_pitch: 0
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Steps
+    m_clip: {fileID: 8300000, guid: 8892964b76071344cb429e10fc83f75e, type: 3}
+    m_volume: 1
+    m_pitch: 0
+    m_loop: 0
+    m_source: {fileID: 0}
+--- !u!4 &1515248075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515248073}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.252478, y: -5.7414527, z: -17.091204}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1527323952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,3 +1991,4 @@ SceneRoots:
   - {fileID: 434904671}
   - {fileID: 1507282041}
   - {fileID: 1643333399}
+  - {fileID: 1515248075}

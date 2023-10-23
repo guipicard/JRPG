@@ -29,11 +29,13 @@ public class MenuFunction : MonoBehaviour
         m_Pause = !m_Pause;
         if (m_Pause)
         {
+            AudioMan._instance.Play("Button");
             Time.timeScale = 0.0f;
             m_MenuScreen.SetActive(true);
         }
         else
         {
+            AudioMan._instance.Play("Button");
             Time.timeScale = 1.0f;
             m_MenuScreen.SetActive(false);
         }
@@ -41,17 +43,20 @@ public class MenuFunction : MonoBehaviour
 
     public void LoadGame()
     {
+        AudioMan._instance.Play("Button");
         GameManager.Instance.QuickLoad();
         Pause();
     }
 
     public void SaveGame()
     {
+        AudioMan._instance.Play("Button");
         GameManager.Instance.QuickSave();
     }
 
     public void MainMenuexit()
     {
+        AudioMan._instance.Play("Button");
         GameManager.Instance.m_OnLoad = null;
         GameManager.Instance.m_OnSave = null;
         SceneManager.LoadScene("MainMenu");

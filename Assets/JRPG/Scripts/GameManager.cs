@@ -13,10 +13,12 @@ public class GameManager : Singleton<GameManager>
     public int m_SaveIndex;
     [SerializeField] public Vector2 m_SpawnPosition = new Vector2(25, -8);
     public GameObject audioListener;
+    private Coroutine m_SceneCoroutine;
 
     protected override void Awake()
     {
         base.Awake();
+        
     }
 
     private void Save(SaveData data, int _index)
@@ -54,6 +56,7 @@ public class GameManager : Singleton<GameManager>
         m_SaveIndex = _index;
         SaveManager.NewSave(m_SaveData, _index);
         Save(m_SaveData, _index);
+        m_SceneCoroutine = StartCoroutine(LoadScene(_index));
         return m_SaveData;
     }
 

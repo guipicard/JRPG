@@ -75,8 +75,11 @@ public class Skill : ScriptableObject
 
     public int damage;
     public int manaCost;
+    public int manaGeneration;
     public int energyGenerated;
     public int energyCost;
+    public int rageCost;
+    public int rageGeneration;
     public int cooldown;
 
     public List<Effect> effects;

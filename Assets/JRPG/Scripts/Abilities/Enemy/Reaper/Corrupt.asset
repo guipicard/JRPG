@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b5a35606e2a32b4e81631e0e749e3e1, type: 3}
+  m_Name: Corrupt
+  m_EditorClassIdentifier: 
+  damage: 0
+  manaCost: 0
+  manaGeneration: 0
+  energyGenerated: 0
+  energyCost: 0
+  rageCost: 10
+  rageGeneration: 0
+  cooldown: 0
+  effects:
+  - damageType: 16
+    effectType: 4
+    overTimeSetting:
+      probability: 0
+      nbTurn: 3
+      damage: 2
+  target: 1
+  powerType: 1
+  element: 64
+  vfx: {fileID: 0}
+  overTimeVfx: {fileID: 0}
+  sfx: {fileID: 0}

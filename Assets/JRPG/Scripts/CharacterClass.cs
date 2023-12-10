@@ -9,6 +9,8 @@ public class CharacterClass : ScriptableObject
     [Serializable]
     public struct Stats
     {
+        public Sprite Sprite;
+        
         public AnimationCurve maxHP;
         public AnimationCurve maxMana;
         public AnimationCurve maxEnergy;
@@ -19,7 +21,7 @@ public class CharacterClass : ScriptableObject
         public AnimationCurve intellect;
         public AnimationCurve spirit;
         
-        public float maxLevel;
+        public float MaxLevel;
         
         public float MaxHP;
         public float MaxMana;
@@ -35,9 +37,12 @@ public class CharacterClass : ScriptableObject
     [Serializable]
     public struct SkillUnlock
     {
+        public string name;
         public int level;
         public Skill skill;
     }
+    
+    
 
     public List<SkillUnlock> skillUnlock;
     public Stats stats;
@@ -96,10 +101,16 @@ public class CharacterInstance
         level++;
         UpdateStats();
     }
+    
+    public void LevelUp(int _level)
+    {
+        level = _level;
+        UpdateStats();
+    }
 
     private void UpdateStats()
     {
-        curveLevel = level / characterClass.stats.maxLevel;
+        curveLevel = level / characterClass.stats.MaxLevel;
         
         HP = currentHP;
         Mana = currentMana;

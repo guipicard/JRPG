@@ -92,8 +92,8 @@ public static class SaveManager
         data.playerInWorldPosition = GameManager.Instance.m_SpawnPosition;
         data.saveName = $"New Game {_index}";
         data.mapName = "WorldMap";
-        data.player = GameManager.Instance.m_CharacterInstance;
-        data.party = new List<CharacterInstance>();
+        data.party = GameManager.Instance.m_Party;
+        data.fight = GameManager.Instance.m_Fight;
     }
 
     public static void DeleteSave(int _index)

@@ -12,15 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5a35606e2a32b4e81631e0e749e3e1, type: 3}
   m_Name: FireBall
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 10
   manaCost: 0
-  energyGenerated: 0
+  manaGeneration: 20
+  energyGenerated: 20
   energyCost: 0
-  cooldown: 0
+  rageCost: 0
+  rageGeneration: 20
+  cooldown: 20
   effects: []
-  target: 0
-  powerType: 0
-  element: 0
+  target: 1
+  powerType: 1
+  element: 2
   vfx: {fileID: 0}
   overTimeVfx: {fileID: 0}
   sfx: {fileID: 0}

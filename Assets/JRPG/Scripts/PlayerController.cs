@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     private Coroutine walkingCoroutine;
 
     private bool isInCombatTrigger = false;
+
     private void Save()
     {
         GameManager.Instance.m_SaveData.playerInWorldPosition = transform.position;
@@ -37,6 +38,21 @@ public class PlayerController : MonoBehaviour
         m_Transform = transform;
         GameManager.Instance.m_OnSave += Save;
         GameManager.Instance.m_OnLoad += Load;
+        if (GameManager.Instance.m_Fight != null)
+        {
+            Vector3 newPos = m_Transform.position;
+            newPos.x = GameManager.Instance.m_LastPosition.x;
+            newPos.y = GameManager.Instance.m_LastPosition.y;
+            m_Transform.position = newPos;
+            GameManager.Instance.EndFight();
+        }
+        
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.m_OnSave -= Save;
+        GameManager.Instance.m_OnLoad -= Load;
     }
 
     void Update()
@@ -44,11 +60,6 @@ public class PlayerController : MonoBehaviour
         if (Time.timeScale > 0.0f)
         {
             ProcessInput();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            GameManager.Instance.m_CharacterInstance.LevelUp();
         }
     }
 
@@ -75,7 +86,7 @@ public class PlayerController : MonoBehaviour
             }
 
             m_Animator.SetFloat("XInput", xValue);
-            if(!walkingCoroutineStarted)
+            if (!walkingCoroutineStarted)
             {
                 walkingCoroutine = StartCoroutine(MovementSound());
                 walkingCoroutineStarted = true;
@@ -91,6 +102,7 @@ public class PlayerController : MonoBehaviour
                 m_Transform.Rotate(0, 180, 0);
                 m_IsRotated = false;
             }
+
             if (!walkingCoroutineStarted)
             {
                 walkingCoroutine = StartCoroutine(MovementSound());
@@ -138,20 +150,21 @@ public class PlayerController : MonoBehaviour
             if (isInCombatTrigger)
             {
                 StopCoroutine(walkingCoroutine);
+                GameManager.Instance.m_LastPosition = new Vector2(m_Transform.position.x, m_Transform.position.y);
                 SceneManager.LoadScene("CombatScene");
             }
         }
 
-        if(xValue == 0 && yValue == 0 && walkingCoroutineStarted)
+        if (xValue == 0 && yValue == 0 && walkingCoroutineStarted)
         {
             StopCoroutine(walkingCoroutine);
             walkingCoroutineStarted = false;
         }
     }
-    
+
     public IEnumerator MovementSound()
     {
-        while(true)
+        while (true)
         {
             AudioMan._instance.Play("Steps");
             yield return new WaitForSeconds(0.5f);
@@ -160,11 +173,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isInCombatTrigger = true;
+        if (collision.CompareTag("fight"))
+        {
+            isInCombatTrigger = true;
+            GameManager.Instance.SetFight(collision.gameObject.GetComponent<Fight>().m_Fight);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         isInCombatTrigger = false;
+        // GameManager.Instance.EndFight();
     }
 }

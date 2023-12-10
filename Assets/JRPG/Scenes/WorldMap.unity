@@ -295,7 +295,8 @@ MonoBehaviour:
   m_SaveIndex: 0
   m_SpawnPosition: {x: 0, y: 0}
   m_CharacterChoices: []
-  m_ChosenCharacter:
+  m_ChosenCharacter: {fileID: 0}
+  m_CharacterInstance:
     characterClass: {fileID: 0}
     HP: 0
     Mana: 0
@@ -307,9 +308,9 @@ MonoBehaviour:
     Intellect: 0
     Spirit: 0
     level: 0
-    maxLevel: 0
     curveLevel: 0
   m_Party: []
+  m_Fight: {fileID: 0}
   audioListener: {fileID: 0}
 --- !u!4 &187725988
 Transform:
@@ -375,20 +376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 300568619}
-  m_Class:
-    characterClass: {fileID: 11400000, guid: 5b1a09451c05794479cfc5f8f05345b3, type: 2}
-    HP: 100
-    Mana: 0
-    Energy: 0
-    Rage: 0
-    Speed: 0
-    Strength: 0
-    Agility: 0
-    Intellect: 0
-    Spirit: 0
-    level: 0
-    maxLevel: 10
-    curveLevel: 0
 --- !u!95 &300568616
 Animator:
   serializedVersion: 5
@@ -581,9 +568,10 @@ GameObject:
   m_Component:
   - component: {fileID: 399187939}
   - component: {fileID: 399187940}
+  - component: {fileID: 399187941}
   m_Layer: 0
   m_Name: CombatSceneTrigger
-  m_TagString: Untagged
+  m_TagString: fight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -648,6 +636,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &399187941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399187938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24db6a5e4d259c4d989e87f3b3cde97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Fight: {fileID: 11400000, guid: 796f52462a34f954799a90e1d56f7072, type: 2}
 --- !u!1 &423136627
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,5 +9,5 @@ public class SaveData : ScriptableObject
     public Vector2 playerInWorldPosition;
     public string mapName;
     public List<CharacterInstance> party;
-    
+    public CharacterInstance player;
 }

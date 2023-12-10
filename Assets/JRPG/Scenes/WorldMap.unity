@@ -294,6 +294,23 @@ MonoBehaviour:
   m_SaveData: {fileID: 0}
   m_SaveIndex: 0
   m_SpawnPosition: {x: 0, y: 0}
+  m_CharacterChoices: []
+  m_ChosenCharacter:
+    characterClass: {fileID: 0}
+    HP: 0
+    Mana: 0
+    Energy: 0
+    Rage: 0
+    Speed: 0
+    Strength: 0
+    Agility: 0
+    Intellect: 0
+    Spirit: 0
+    level: 0
+    maxLevel: 0
+    curveLevel: 0
+  m_Party: []
+  audioListener: {fileID: 0}
 --- !u!4 &187725988
 Transform:
   m_ObjectHideFlags: 0
@@ -358,6 +375,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 300568619}
+  m_Class:
+    characterClass: {fileID: 11400000, guid: 5b1a09451c05794479cfc5f8f05345b3, type: 2}
+    HP: 100
+    Mana: 0
+    Energy: 0
+    Rage: 0
+    Speed: 0
+    Strength: 0
+    Agility: 0
+    Intellect: 0
+    Spirit: 0
+    level: 0
+    maxLevel: 10
+    curveLevel: 0
 --- !u!95 &300568616
 Animator:
   serializedVersion: 5
@@ -419,7 +450,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 4
   m_Sprite: {fileID: 425202069, guid: f1c82014caac470459913d3ededea763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2492,6 +2523,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1511718025}
     m_Modifications:
+    - target: {fileID: -7017471689330238165, guid: cc680c9a6bc5b5a4a968071ac21b2514, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4295752198150948478, guid: cc680c9a6bc5b5a4a968071ac21b2514, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.994085
@@ -2535,6 +2570,10 @@ PrefabInstance:
     - target: {fileID: 6072001527644498762, guid: cc680c9a6bc5b5a4a968071ac21b2514, type: 3}
       propertyPath: m_Name
       value: sans titre
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428579821704385119, guid: cc680c9a6bc5b5a4a968071ac21b2514, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

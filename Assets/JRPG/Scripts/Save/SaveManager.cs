@@ -91,7 +91,8 @@ public static class SaveManager
         }
         data.playerInWorldPosition = GameManager.Instance.m_SpawnPosition;
         data.saveName = $"New Game {_index}";
-        data.mapName = "New Map";
+        data.mapName = "WorldMap";
+        data.player = GameManager.Instance.m_CharacterInstance;
         data.party = new List<CharacterInstance>();
     }
 

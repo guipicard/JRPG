@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
         {
             ProcessInput();
         }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            GameManager.Instance.m_CharacterInstance.LevelUp();
+        }
     }
 
     private void ProcessInput()

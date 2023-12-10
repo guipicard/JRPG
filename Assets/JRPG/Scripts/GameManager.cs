@@ -12,15 +12,19 @@ public class GameManager : Singleton<GameManager>
     public Action m_OnLoad;
     public int m_SaveIndex;
     [SerializeField] public Vector2 m_SpawnPosition = new Vector2(25, -8);
+    public List<CharacterClass> m_CharacterChoices;
+    public CharacterClass m_ChosenCharacter;
+    public CharacterInstance m_CharacterInstance;
+    public List<CharacterInstance> m_Party;
     public GameObject audioListener;
     private Coroutine m_SceneCoroutine;
-
+    
     protected override void Awake()
     {
         base.Awake();
         
     }
-
+    
     private void Save(SaveData data, int _index)
     {
         m_SaveIndex = 0;
@@ -36,7 +40,7 @@ public class GameManager : Singleton<GameManager>
             Debug.Log("Save Failed.");
         }
     }
-
+    
     private void Load(SaveData data, int _index)
     {
         bool success = SaveManager.Load(data, _index);
@@ -51,25 +55,30 @@ public class GameManager : Singleton<GameManager>
             Debug.Log("Load Failed.");
         }
     }
+    
     public SaveData NewGame(int _index)
     {
+        m_ChosenCharacter = m_CharacterChoices[0]; // CHANGE FOR CHOICE
+        m_CharacterInstance.characterClass = m_ChosenCharacter;
+        m_CharacterInstance.LevelUp();
+        m_Party.Add(m_CharacterInstance);
         m_SaveIndex = _index;
         SaveManager.NewSave(m_SaveData, _index);
         Save(m_SaveData, _index);
         m_SceneCoroutine = StartCoroutine(LoadScene(_index));
         return m_SaveData;
     }
-
+    
     public int GetIndex()
     {
         return m_SaveIndex;
     }
-
+    
     public void QuickSave()
     {
         Save(m_SaveData, m_SaveIndex);
     }
-
+    
     public void QuickLoad()
     {
         Load(m_SaveData, m_SaveIndex);
@@ -94,7 +103,7 @@ public class GameManager : Singleton<GameManager>
             }
         }
     }
-
+    
     public bool HasSave(int _index)
     {
         if (SaveManager.HasData(_index) == null)
@@ -103,7 +112,7 @@ public class GameManager : Singleton<GameManager>
         }
         return true;
     }
-
+    
     public void DeleteSave(int _index)
     {
         SaveManager.DeleteSave(_index);

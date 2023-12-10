@@ -4069,6 +4069,14 @@ PrefabInstance:
       propertyPath: m_SpawnPosition.y
       value: -8
       objectReference: {fileID: 0}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: m_CharacterChoices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8420079530203506336, guid: 741ced8b710d1194ea6198b1b7a43927, type: 3}
+      propertyPath: m_CharacterChoices.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b1a09451c05794479cfc5f8f05345b3, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

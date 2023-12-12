@@ -16,6 +16,8 @@ enum CombatMenus
 
 public class UI : MonoBehaviour
 {
+    [SerializeField] private GameObject vic;
+    [SerializeField] private GameObject def;
     [SerializeField] private List<GameObject> m_Buttons;
     private Stack<GameObject> m_Stack;
     [SerializeField] private List<GameObject> m_Enemies;
@@ -25,6 +27,9 @@ public class UI : MonoBehaviour
     private List<CharacterInstance> m_EnemiesInstance;
     private int m_Turn;
     private int m_SelectedPlayer;
+    private float m_allyHp;
+    private float m_enemyHp;
+    private float m_counter;
 
     private void Start()
     {
@@ -41,6 +46,7 @@ public class UI : MonoBehaviour
             m_Players[i].GetComponent<SpriteRenderer>().sprite = m_CharactersInstance[i].characterClass.stats.Sprite;
             m_Players[i].GetComponent<SpriteRenderer>().flipX = m_CharactersInstance[i].characterClass.stats.m_FlipX;
             m_Players[i].GetComponent<Animator>().runtimeAnimatorController = m_CharactersInstance[i].characterClass.stats.m_Animator;
+            m_allyHp += m_CharactersInstance[i].HP;
         }
 
         if (m_EnemiesInstance.Count == 1) m_Enemies[1].SetActive(false);
@@ -52,6 +58,7 @@ public class UI : MonoBehaviour
                 m_EnemiesInstance[i].LevelUp((int)GameManager.Instance.m_Fight.level + (int)m_CharactersInstance[0].level);
                 m_Enemies[i].GetComponent<SpriteRenderer>().flipX = m_EnemiesInstance[i].characterClass.stats.m_FlipX;
                 m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController = m_EnemiesInstance[i].characterClass.stats.m_Animator;
+                m_enemyHp += m_EnemiesInstance[i].HP;
             }
             else
             {
@@ -66,6 +73,31 @@ public class UI : MonoBehaviour
 
         UpdateUi();
         NextMenu(0);
+    }
+
+    private void Update()
+    {
+        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CombatScene"))
+        {
+            if(m_allyHp<=0)
+            {
+                def.SetActive(true);
+                if(m_counter >= 3)
+                {
+                    SceneManager.LoadScene("WorldMap");
+                }
+                m_counter = m_counter + Time.deltaTime;
+            }
+            if (m_enemyHp <= 0)
+            {
+                vic.SetActive(true);
+                if (m_counter >= 3)
+                {
+                    SceneManager.LoadScene("WorldMap");
+                }
+                m_counter = m_counter + Time.deltaTime;
+            }
+        }
     }
 
     public void ReturnToGame()

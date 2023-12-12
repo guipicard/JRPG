@@ -83,7 +83,7 @@ public class CharacterInstance
     private float currentIntellect => characterClass.stats.intellect.Evaluate(curveLevel) * characterClass.stats.MaxIntellect;
     private float currentSpirit => characterClass.stats.spirit.Evaluate(curveLevel) * characterClass.stats.MaxSpirit;
 
-    public float percentHP => HP / (characterClass.stats.spirit.Evaluate(curveLevel) * characterClass.stats.MaxSpirit);
+    public float percentHP => HP / (characterClass.stats.maxHP.Evaluate(curveLevel) * characterClass.stats.MaxHP);
     public float percentMana => Mana / (characterClass.stats.maxMana.Evaluate(curveLevel) * characterClass.stats.MaxMana);
     public float percentEnergy => (Energy / characterClass.stats.MaxEnergy) * 100f;
     public float percentRage => (Rage / characterClass.stats.MaxRage) * 100f;

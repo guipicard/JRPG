@@ -36,6 +36,6 @@ MonoBehaviour:
   target: 1
   powerType: 2
   element: 3
-  vfx: {fileID: 0}
+  vfx: {fileID: 6146545414153545494, guid: 61753401622c2a947a30e2147430e97d, type: 3}
   overTimeVfx: {fileID: 0}
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 61dca71aaa1111e4ca84540fcc56405f, type: 3}

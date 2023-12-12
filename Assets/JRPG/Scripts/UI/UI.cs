@@ -19,6 +19,7 @@ public class UI : MonoBehaviour
     private Stack<GameObject> m_Stack;
     [SerializeField] private List<GameObject> m_Enemies;
     [SerializeField] private List<GameObject> m_Players;
+    [SerializeField] private List<GameObject> m_Abilities;
     private List<CharacterInstance> m_CharactersInstance;
     private List<CharacterInstance> m_EnemiesInstance;
     private int m_Turn;
@@ -135,6 +136,10 @@ public class UI : MonoBehaviour
         int target = UnityEngine.Random.Range(0, m_EnemiesInstance.Count);
         m_EnemiesInstance[target].HP -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
         m_CharactersInstance[m_SelectedPlayer].Mana -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.manaCost;
+        Vector3 targetPos = m_Enemies[target].transform.position;
+        GameObject currentVfx = Instantiate(m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.vfx, targetPos, Quaternion.identity);
+        currentVfx.GetComponent<ParticleSystem>().Play();
+        AudioClip clip = m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.sfx;
         PassTurn();
     }
 

@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -147,18 +147,436 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 547
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc4c90c959d57846ab7f759337b0d7f
+      internalID: 1922204996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 547
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3816540d7817a44e9648a6c8552d8a9
+      internalID: 1786623468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 547
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cadb7054e41de4384725ca95122b7a
+      internalID: -1604669874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 547
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b236dc62fbed2349a4d4414e32665c0
+      internalID: 1015229220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 419
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c4796eb1c4aac489328501708a55f5
+      internalID: -445689569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_5
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 419
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4fee0a7924fa8459bd4763cceb8b58
+      internalID: 716808271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_6
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 419
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87004b623aad81440b083e35e1c1e0a4
+      internalID: 1083939741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 419
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b270da7b1a98ca489f293f99182e816
+      internalID: -173896174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 291
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222c8d5a45da4414fb3ae7f316e6635d
+      internalID: -323744908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_9
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 291
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6779794bc3044d649bcfaf3978b0b00f
+      internalID: -1621495552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_10
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 291
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba46f0d2afe8ff4894a89de33dc2843
+      internalID: -1439964878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_11
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 291
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d66b3abe25b25b4ba564958b521dbb1
+      internalID: 1814931961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 163
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c1a88e69888eb4fb4cac02da8f37b2
+      internalID: 1237666765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 163
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee74b3d76398ad4c8042eb4079b8db8
+      internalID: -890792039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_14
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 163
+        width: 68
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b5bdb8631419c4e95815ffd74ea3ed
+      internalID: -1284239797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_15
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 163
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3aa246e1c1e7da438379897d79b277f
+      internalID: 113102664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 35
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e11c25b4c86a64f936153165618e13
+      internalID: 652527021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 35
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305bc0c7571cfa14a998c830e4735e0a
+      internalID: 500522302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Nintendo Switch - Octopath Traveler II - Throne Anguis_18
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 35
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5352459ebb23c45b0d2d9e65003ae6
+      internalID: 120483198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 84775d64efa5ef245bb40eb595d56fd0
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_0: 1922204996
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_1: 1786623468
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_10: -1439964878
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_11: 1814931961
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_12: 1237666765
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_13: -890792039
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_14: -1284239797
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_15: 113102664
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_16: 652527021
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_17: 500522302
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_18: 120483198
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_2: -1604669874
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_3: 1015229220
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_4: -445689569
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_5: 716808271
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_6: 1083939741
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_7: -173896174
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_8: -323744908
+      Nintendo Switch - Octopath Traveler II - Throne Anguis_9: -1621495552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

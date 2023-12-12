@@ -804,7 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24db6a5e4d259c4d989e87f3b3cde97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Fight: {fileID: 11400000, guid: 796f52462a34f954799a90e1d56f7072, type: 2}
+  m_Fight: {fileID: 11400000, guid: 85ca573457a753349b13eed52e607d48, type: 2}
 --- !u!95 &399187942
 Animator:
   serializedVersion: 5

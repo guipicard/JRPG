@@ -89,5 +89,5 @@ public class Skill : ScriptableObject
 
     public GameObject vfx;
     public GameObject overTimeVfx;
-    public GameObject sfx;
+    public AudioClip sfx;
 }

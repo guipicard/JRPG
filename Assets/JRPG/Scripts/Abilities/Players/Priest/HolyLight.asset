@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b5a35606e2a32b4e81631e0e749e3e1, type: 3}
   m_Name: HolyLight
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 4
   manaCost: 0
   manaGeneration: 30
   energyGenerated: 0
@@ -21,9 +21,9 @@ MonoBehaviour:
   rageGeneration: 0
   cooldown: 2
   effects: []
-  target: 2
+  target: 1
   powerType: 4
   element: 32
-  vfx: {fileID: 0}
+  vfx: {fileID: 7022268795503775816, guid: 7377f38a94f13bd43924090d4a77f29e, type: 3}
   overTimeVfx: {fileID: 0}
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: af01077d7f5ffcd42974d1ba3d795653, type: 3}

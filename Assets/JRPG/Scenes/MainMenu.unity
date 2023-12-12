@@ -469,6 +469,90 @@ MonoBehaviour:
     m_pitch: 1
     m_loop: 0
     m_source: {fileID: 0}
+  - m_name: Fireball
+    m_clip: {fileID: 8300000, guid: c2352c433d729524fba0f105b62c08a5, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: LightningBlast
+    m_clip: {fileID: 8300000, guid: 790e88199377b7945a5a3988dca7ad9b, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: TakeDamage
+    m_clip: {fileID: 8300000, guid: 3df0fba5e3aaa1f47b05605532a9b110, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: LightBlast
+    m_clip: {fileID: 8300000, guid: 62ea0f00b53d5f44aacbae3b65d50e9e, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: HolyLight
+    m_clip: {fileID: 8300000, guid: fac90334a5ba0a745960b7393a0eeeee, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: FlamingFist
+    m_clip: {fileID: 8300000, guid: 61dca71aaa1111e4ca84540fcc56405f, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Unbalanced
+    m_clip: {fileID: 8300000, guid: 71a6245d4de04fd43b0705044a854ab7, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: OverHead
+    m_clip: {fileID: 8300000, guid: 43a0ff7dd893fcf4cb34716705e170c4, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Whirl
+    m_clip: {fileID: 8300000, guid: e21b3010ada0d8647b2785eca620d531, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: BloodRage
+    m_clip: {fileID: 8300000, guid: 29bea7286d63dc345b0577514647c953, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: PreciseStrike
+    m_clip: {fileID: 8300000, guid: 33ff885e6d8220e4d8435b017cc4078f, type: 3}
+    m_volume: 0.5
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Flee
+    m_clip: {fileID: 8300000, guid: f4bf30fe4506c854690f2d4f76a4f17a, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Victory
+    m_clip: {fileID: 8300000, guid: cb554ca26fe65f24ba49dcbdf86a32b6, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
+  - m_name: Defeat
+    m_clip: {fileID: 8300000, guid: a3c1f1a3a45c55e4abc819e3a46bd6ca, type: 3}
+    m_volume: 1
+    m_pitch: 1
+    m_loop: 0
+    m_source: {fileID: 0}
 --- !u!4 &154162313
 Transform:
   m_ObjectHideFlags: 0

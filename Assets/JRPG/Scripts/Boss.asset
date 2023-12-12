@@ -15,15 +15,19 @@ MonoBehaviour:
   type: 0
   enemies:
   - characterClass: {fileID: 11400000, guid: 550bd80b998ecca43b6b0292eedc0129, type: 2}
-    HP: 0
-    Mana: 0
-    Energy: 0
-    Rage: 0
-    Speed: 0
-    Strength: 0
-    Agility: 0
-    Intellect: 0
-    Spirit: 0
-    level: 0
-    curveLevel: 0
-  level: 2
+    HP: 250
+    Mana: 100
+    Energy: 100
+    Rage: 100
+    Speed: 5
+    Strength: 25
+    Agility: 25
+    Intellect: 25
+    Spirit: 25
+    level: 10
+    curveLevel: 1
+  level: 10
+  xp: 0
+  givesFriend: 0
+  friend: {fileID: 0}
+  done: 0

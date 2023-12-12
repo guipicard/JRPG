@@ -325,9 +325,9 @@ GameObject:
   m_Component:
   - component: {fileID: 207392196}
   - component: {fileID: 207392200}
-  - component: {fileID: 207392199}
   - component: {fileID: 207392198}
   - component: {fileID: 207392197}
+  - component: {fileID: 207392201}
   m_Layer: 0
   m_Name: CombatSceneTrigger (4)
   m_TagString: fight
@@ -423,19 +423,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &207392199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207392195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d24db6a5e4d259c4d989e87f3b3cde97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Fight: {fileID: 11400000, guid: 796f52462a34f954799a90e1d56f7072, type: 2}
 --- !u!61 &207392200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -481,6 +468,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &207392201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207392195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d24db6a5e4d259c4d989e87f3b3cde97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Fight: {fileID: 11400000, guid: 531fc500896928844aa60fa8f184e42e, type: 2}
 --- !u!1 &300568613
 GameObject:
   m_ObjectHideFlags: 0

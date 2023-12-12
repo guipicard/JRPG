@@ -16,6 +16,8 @@ enum CombatMenus
 
 public class UI : MonoBehaviour
 {
+    [SerializeField] private GameObject vic;
+    [SerializeField] private GameObject def;
     [SerializeField] private List<GameObject> m_Buttons;
     private Stack<GameObject> m_Stack;
     [SerializeField] private List<GameObject> m_Enemies;
@@ -25,12 +27,17 @@ public class UI : MonoBehaviour
     private List<CharacterInstance> m_EnemiesInstance;
     private int m_Turn;
     private int m_SelectedPlayer;
+    private float m_allyHp;
+    private float m_enemyHp;
+    private float m_counter;
 
     private void Start()
     {
         m_Stack = new Stack<GameObject>();
         m_CharactersInstance = new List<CharacterInstance>();
         m_Turn = 0;
+        m_allyHp = 0;
+        m_enemyHp = 0;
 
         m_CharactersInstance = GameManager.Instance.m_Party;
         m_EnemiesInstance = GameManager.Instance.m_Fight.enemies;
@@ -42,6 +49,7 @@ public class UI : MonoBehaviour
             m_Players[i].GetComponent<SpriteRenderer>().flipX = m_CharactersInstance[i].characterClass.stats.m_FlipX;
             m_Players[i].GetComponent<Animator>().runtimeAnimatorController =
                 m_CharactersInstance[i].characterClass.stats.m_Animator;
+            m_allyHp += m_CharactersInstance[i].HP;
         }
 
         if (m_EnemiesInstance.Count == 1) m_Enemies[1].SetActive(false);
@@ -52,14 +60,18 @@ public class UI : MonoBehaviour
             {
                 m_EnemiesInstance[i]
                     .LevelUp((int)GameManager.Instance.m_Fight.level + (int)m_CharactersInstance[0].level);
-                m_Enemies[i].GetComponent<SpriteRenderer>().flipX = m_EnemiesInstance[i].characterClass.stats.m_FlipX;
-                m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController =
-                    m_EnemiesInstance[i].characterClass.stats.m_Animator;
             }
             else
             {
                 m_EnemiesInstance[i].LevelUp((int)GameManager.Instance.m_Fight.level);
             }
+
+            m_Enemies[i].GetComponent<SpriteRenderer>().flipX = m_EnemiesInstance[i].characterClass.stats.m_FlipX;
+            m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController =
+                m_EnemiesInstance[i].characterClass.stats.m_Animator;
+            m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController =
+                m_EnemiesInstance[i].characterClass.stats.m_Animator;
+            m_enemyHp += m_EnemiesInstance[i].HP;
         }
 
         foreach (var menu in m_Buttons)
@@ -69,6 +81,44 @@ public class UI : MonoBehaviour
 
         UpdateUi();
         NextMenu(0);
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CombatScene"))
+        {
+            if (m_allyHp <= 0f)
+            {
+                def.SetActive(true);
+                if (m_counter >= 3)
+                {
+                    SceneManager.LoadScene("MainMenu");
+                }
+
+                m_counter = m_counter + Time.deltaTime;
+            }
+
+            if (m_enemyHp <= 0f)
+            {
+                vic.SetActive(true);
+
+                if (!GameManager.Instance.m_Fight.done)
+                {
+                    GameManager.Instance.m_Fight.done = true;
+                    // if (GameManager.Instance.m_Fight.givesFriend)
+                    // {
+                    //     GameManager.Instance.m_Party.Add(GameManager.Instance.m_Fight.friend));
+                    // }
+                }
+                
+                if (m_counter >= 3)
+                {
+                    SceneManager.LoadScene("WorldMap");
+                }
+
+                m_counter = m_counter + Time.deltaTime;
+            }
+        }
     }
 
     public void ReturnToGame()
@@ -149,8 +199,13 @@ public class UI : MonoBehaviour
 
         m_EnemiesInstance[target].HP -=
             m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
+        m_enemyHp -=
+            m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
         m_CharactersInstance[m_SelectedPlayer].Mana -=
             m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.manaCost;
+        string atk;
+        atk = index == 0 ? "Atk1" : "Atk2"; 
+        m_Players[m_SelectedPlayer].GetComponent<Animator>().SetTrigger(atk);
         UpdateUi();
         Vector3 targetPos = m_Enemies[target].transform.position;
         GameObject currentVfx =
@@ -174,6 +229,7 @@ public class UI : MonoBehaviour
         }
 
         m_CharactersInstance[target].HP -= m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.damage;
+        m_allyHp -= m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.damage;
         m_EnemiesInstance[attacker].Mana -=
             m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.manaCost;
         UpdateUi();

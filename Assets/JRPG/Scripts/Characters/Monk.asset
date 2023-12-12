@@ -238,6 +238,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    m_Animator: {fileID: 9100000, guid: 8e17c142d0a303046999287d482ec115, type: 2}
+    m_FlipX: 0
     MaxLevel: 10
     MaxHP: 250
     MaxMana: 100

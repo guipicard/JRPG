@@ -66,7 +66,9 @@ public class GameManager : Singleton<GameManager>
     public SaveData NewGame(int _index)
     {
         m_ChosenCharacter = m_CharacterChoices[0]; // CHANGE FOR CHOICE
+        
         m_Party.Add(new CharacterInstance(m_ChosenCharacter));
+        m_Party.Add(new CharacterInstance(m_CharacterChoices[1]));
         m_Fight = null;
         m_SaveIndex = _index;
         SaveManager.NewSave(m_SaveData, _index);

@@ -17,10 +17,10 @@ public class UI : MonoBehaviour
 {
     [SerializeField] private List<GameObject> m_Buttons;
     private Stack<GameObject> m_Stack;
-    [SerializeField] private GameObject m_Enemy;
+    [SerializeField] private List<GameObject> m_Enemies;
     [SerializeField] private List<GameObject> m_Players;
     private List<CharacterInstance> m_CharactersInstance;
-    private CharacterInstance m_EnemyInstance;
+    private List<CharacterInstance> m_EnemiesInstance;
     private int m_Turn;
     private int m_SelectedPlayer;
 
@@ -31,20 +31,31 @@ public class UI : MonoBehaviour
         m_Turn = 0;
 
         m_CharactersInstance = GameManager.Instance.m_Party;
-        m_EnemyInstance = GameManager.Instance.m_Fight.enemy;
+        m_EnemiesInstance = GameManager.Instance.m_Fight.enemies;
         
         if (m_CharactersInstance.Count == 1) m_Players[1].SetActive(false);
         for (int i = 0; i < m_CharactersInstance.Count; i++)
         {
             m_Players[i].GetComponent<SpriteRenderer>().sprite = m_CharactersInstance[i].characterClass.stats.Sprite;
         }
-        m_Enemy.GetComponent<SpriteRenderer>().sprite = m_EnemyInstance.characterClass.stats.Sprite;
+        if (m_CharactersInstance.Count == 1) m_Enemies[1].SetActive(false);
+        for (int i = 0; i < m_CharactersInstance.Count; i++)
+        {
+            m_Enemies[i].GetComponent<SpriteRenderer>().sprite = m_EnemiesInstance[i].characterClass.stats.Sprite;
+            if (GameManager.Instance.m_Fight.type != EnemyType.Boss)
+            {
+                m_EnemiesInstance[i].LevelUp((int)GameManager.Instance.m_Fight.level + (int)m_CharactersInstance[0].level);
+            }
+            else
+            {
+                m_EnemiesInstance[i].LevelUp((int)GameManager.Instance.m_Fight.level);
+            }
+        }
 
         foreach (var menu in m_Buttons)
         {
             menu.SetActive(false);
         }
-        m_EnemyInstance.LevelUp((int)GameManager.Instance.m_Fight.level);
         NextMenu(0);
     }
 
@@ -121,17 +132,19 @@ public class UI : MonoBehaviour
 
     public void Ability(int index)
     {
-        m_EnemyInstance.HP -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
+        int target = UnityEngine.Random.Range(0, m_EnemiesInstance.Count);
+        m_EnemiesInstance[target].HP -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
         m_CharactersInstance[m_SelectedPlayer].Mana -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.manaCost;
         PassTurn();
     }
 
     private void EnemyAttack()
     {
-        int spell = UnityEngine.Random.Range(0, m_EnemyInstance.characterClass.skillUnlock.Count);
+        int attacker = UnityEngine.Random.Range(0, m_EnemiesInstance.Count);
+        int spell = UnityEngine.Random.Range(0, m_EnemiesInstance[attacker].characterClass.skillUnlock.Count);
         int target = UnityEngine.Random.Range(0, m_CharactersInstance.Count);
-        m_CharactersInstance[target].HP -= m_EnemyInstance.characterClass.skillUnlock[spell].skill.damage;
-        m_EnemyInstance.Mana -= m_EnemyInstance.characterClass.skillUnlock[spell].skill.manaCost;
+        m_CharactersInstance[target].HP -= m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.damage;
+        m_EnemiesInstance[attacker].Mana -= m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.manaCost;
         PassTurn();
     }
 }

@@ -22,4 +22,5 @@ public class FightInfo : ScriptableObject
     public float xp;
     public bool givesFriend;
     public CharacterClass friend;
+    public bool done = false;
 }

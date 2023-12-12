@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: FightTest
   m_EditorClassIdentifier: Assembly-CSharp::FightInfo
-  enemy:
-    characterClass: {fileID: 11400000, guid: 550bd80b998ecca43b6b0292eedc0129, type: 2}
+  type: 0
+  enemies:
+  - characterClass: {fileID: 11400000, guid: 550bd80b998ecca43b6b0292eedc0129, type: 2}
     HP: 0
     Mana: 0
     Energy: 0

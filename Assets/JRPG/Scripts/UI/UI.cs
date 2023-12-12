@@ -38,7 +38,7 @@ public class UI : MonoBehaviour
         {
             m_Players[i].GetComponent<SpriteRenderer>().sprite = m_CharactersInstance[i].characterClass.stats.Sprite;
         }
-        if (m_CharactersInstance.Count == 1) m_Enemies[1].SetActive(false);
+        if (m_EnemiesInstance.Count == 1) m_Enemies[1].SetActive(false);
         for (int i = 0; i < m_CharactersInstance.Count; i++)
         {
             m_Enemies[i].GetComponent<SpriteRenderer>().sprite = m_EnemiesInstance[i].characterClass.stats.Sprite;

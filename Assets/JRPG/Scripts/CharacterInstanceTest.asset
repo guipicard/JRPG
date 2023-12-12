@@ -17,7 +17,6 @@ MonoBehaviour:
     level: 1
     skill: {fileID: 11400000, guid: 10fbddcf2ff4a5c4d80b821955b27d77, type: 2}
   stats:
-    name: mage
     Sprite: {fileID: 425202069, guid: f1c82014caac470459913d3ededea763, type: 3}
     maxHP:
       serializedVersion: 2
@@ -235,6 +234,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    m_Animator: {fileID: 9100000, guid: c2a132dbafd34de42899178a7e77b084, type: 2}
+    m_FlipX: 1
     MaxLevel: 10
     MaxHP: 250
     MaxMana: 100

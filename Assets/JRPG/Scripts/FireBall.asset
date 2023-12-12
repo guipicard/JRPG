@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireBall
   m_EditorClassIdentifier: 
   damage: 10
-  manaCost: 0
+  manaCost: 10
   manaGeneration: 20
   energyGenerated: 20
   energyCost: 0

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -20,6 +21,9 @@ public class CharacterClass : ScriptableObject
         public AnimationCurve agility;
         public AnimationCurve intellect;
         public AnimationCurve spirit;
+
+        public AnimatorController m_Animator;
+        public bool m_FlipX;
         
         public float MaxLevel;
         
@@ -78,15 +82,15 @@ public class CharacterInstance
     private float currentIntellect => characterClass.stats.intellect.Evaluate(curveLevel) * characterClass.stats.MaxIntellect;
     private float currentSpirit => characterClass.stats.spirit.Evaluate(curveLevel) * characterClass.stats.MaxSpirit;
     
-    public float percentHP => (HP/ characterClass.stats.MaxHP) * 100f;
-    public float percentMana => (Mana/ characterClass.stats.MaxMana) * 100f;
-    public float percentEnergy => (Energy/ characterClass.stats.MaxEnergy) * 100f;
-    public float percentRage => (Rage/ characterClass.stats.MaxRage) * 100f;
-    public float percentSpeed => (Speed/ characterClass.stats.MaxSpeed) * 100f;
-    public float percentStrength => (Strength/ characterClass.stats.MaxStrength) * 100f;
-    public float percentAgility => (Agility/ characterClass.stats.MaxAgility) * 100f;
-    public float percentIntellect => (Intellect/ characterClass.stats.MaxIntellect) * 100f;
-    public float percentSpirit => (Spirit/ characterClass.stats.MaxSpirit) * 100f;
+    public float percentHP => HP/ (characterClass.stats.maxHP.Evaluate(curveLevel) * characterClass.stats.MaxHP);
+    public float percentMana => Mana/ (characterClass.stats.maxMana.Evaluate(curveLevel) * characterClass.stats.MaxMana);
+    public float percentEnergy => (Energy/ characterClass.stats.MaxEnergy);
+    public float percentRage => (Rage/ characterClass.stats.MaxRage);
+    public float percentSpeed => (Speed/ characterClass.stats.MaxSpeed);
+    public float percentStrength => (Strength/ characterClass.stats.MaxStrength);
+    public float percentAgility => (Agility/ characterClass.stats.MaxAgility);
+    public float percentIntellect => (Intellect/ characterClass.stats.MaxIntellect);
+    public float percentSpirit => (Spirit/ characterClass.stats.MaxSpirit);
 
 
     public CharacterInstance(CharacterClass _class)

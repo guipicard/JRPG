@@ -19,4 +19,7 @@ public class FightInfo : ScriptableObject
     public EnemyType type;
     public List<CharacterInstance> enemies;
     public float level;
+    public float xp;
+    public bool givesFriend;
+    public CharacterClass friend;
 }

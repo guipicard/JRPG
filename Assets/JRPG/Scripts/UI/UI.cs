@@ -40,7 +40,8 @@ public class UI : MonoBehaviour
         {
             m_Players[i].GetComponent<SpriteRenderer>().sprite = m_CharactersInstance[i].characterClass.stats.Sprite;
             m_Players[i].GetComponent<SpriteRenderer>().flipX = m_CharactersInstance[i].characterClass.stats.m_FlipX;
-            m_Players[i].GetComponent<Animator>().runtimeAnimatorController = m_CharactersInstance[i].characterClass.stats.m_Animator;
+            m_Players[i].GetComponent<Animator>().runtimeAnimatorController =
+                m_CharactersInstance[i].characterClass.stats.m_Animator;
         }
 
         if (m_EnemiesInstance.Count == 1) m_Enemies[1].SetActive(false);
@@ -49,9 +50,11 @@ public class UI : MonoBehaviour
             m_Enemies[i].GetComponent<SpriteRenderer>().sprite = m_EnemiesInstance[i].characterClass.stats.Sprite;
             if (GameManager.Instance.m_Fight.type != EnemyType.Boss)
             {
-                m_EnemiesInstance[i].LevelUp((int)GameManager.Instance.m_Fight.level + (int)m_CharactersInstance[0].level);
+                m_EnemiesInstance[i]
+                    .LevelUp((int)GameManager.Instance.m_Fight.level + (int)m_CharactersInstance[0].level);
                 m_Enemies[i].GetComponent<SpriteRenderer>().flipX = m_EnemiesInstance[i].characterClass.stats.m_FlipX;
-                m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController = m_EnemiesInstance[i].characterClass.stats.m_Animator;
+                m_Enemies[i].GetComponent<Animator>().runtimeAnimatorController =
+                    m_EnemiesInstance[i].characterClass.stats.m_Animator;
             }
             else
             {
@@ -143,15 +146,19 @@ public class UI : MonoBehaviour
     public void Ability(int index)
     {
         int target = UnityEngine.Random.Range(0, m_EnemiesInstance.Count);
-        
-        m_EnemiesInstance[target].HP -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
-        m_CharactersInstance[m_SelectedPlayer].Mana -= m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.manaCost;
+
+        m_EnemiesInstance[target].HP -=
+            m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.damage;
+        m_CharactersInstance[m_SelectedPlayer].Mana -=
+            m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.manaCost;
         UpdateUi();
         Vector3 targetPos = m_Enemies[target].transform.position;
-        GameObject currentVfx = Instantiate(m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.vfx, targetPos, Quaternion.identity);
+        GameObject currentVfx =
+            Instantiate(m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.vfx, targetPos,
+                Quaternion.identity);
         currentVfx.GetComponent<ParticleSystem>().Play();
         AudioClip clip = m_CharactersInstance[m_SelectedPlayer].characterClass.skillUnlock[index].skill.sfx;
-        
+
         PassTurn();
     }
 
@@ -160,6 +167,12 @@ public class UI : MonoBehaviour
         int attacker = UnityEngine.Random.Range(0, m_EnemiesInstance.Count);
         int spell = UnityEngine.Random.Range(0, m_EnemiesInstance[attacker].characterClass.skillUnlock.Count);
         int target = UnityEngine.Random.Range(0, m_CharactersInstance.Count);
+
+        for (int i = 0; i < m_CharactersInstance.Count; i++)
+        {
+            if (m_CharactersInstance[i].HP > m_CharactersInstance[target].HP) target = i;
+        }
+
         m_CharactersInstance[target].HP -= m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.damage;
         m_EnemiesInstance[attacker].Mana -=
             m_EnemiesInstance[attacker].characterClass.skillUnlock[spell].skill.manaCost;
